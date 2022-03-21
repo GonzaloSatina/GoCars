@@ -99,6 +99,7 @@ body .navbar .lupa-nav:hover {
   box-shadow: none !important;
 }
 body .navbar .input-group input {
+  color: #3f3f3f;
   -webkit-border-top-left-radius: 500000000px;
   -webkit-border-bottom-left-radius: 500000000px;
   -moz-border-radius-topleft: 500000000px;
@@ -435,14 +436,10 @@ body .nuestra-empresa .col-lg-7 p {
     padding-right: 0;
   }
 }
-body .nuestra-empresa .col-lg-5 {
-}
 body .nuestra-empresa .col-lg-5 h3 {
   text-transform: none;
   font-weight: 300;
   color: #8b8b8b;
-}
-body .nuestra-empresa .col-lg-5 {
 }
 body .nuestra-empresa .ceo {
   width: 45%;
