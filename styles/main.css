@@ -113,6 +113,7 @@ body .navbar .input-group input {
   border: none;
   background-color: #d9d8d8;
   font-weight: 100;
+  font-size: 100%;
 }
 body .navbar .input-group {
   font-weight: 100;
@@ -494,6 +495,9 @@ body .nuestra-empresa .ceo {
 }
 
 /* MARCAS HOME */
+body .marcas {
+overflow-x: auto !important;
+}
 body .marcas div div {
   width: 7rem;
   height: 7rem;
@@ -501,6 +505,16 @@ body .marcas div div {
 body .marcas img {
   width: 7rem;
   margin: 0 2rem;
+}
+@media (max-width: 992px) {
+  body .marcas div div {
+    width: 5rem;
+    height: 5rem;
+  }
+  body .marcas img {
+    width: 5rem;
+    margin: 0 1rem;
+  }
 }
 /* PUBLICIDAD HOME */
 body .publicidad-home {
