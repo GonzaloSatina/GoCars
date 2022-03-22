@@ -5,6 +5,16 @@
   --azul: #0000c8;
   --rosa: #f8cabe;
 }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 
 @font-face {
   font-family: "gotham";
