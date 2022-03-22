@@ -5,17 +5,6 @@
   --azul: #0000c8;
   --rosa: #f8cabe;
 }
-html {
-  box-sizing: border-box !important;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit !important;
-}
-
-
 @font-face {
   font-family: "gotham";
   src: url("../fonts/Gotham-Light.otf");
