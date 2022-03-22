@@ -66,6 +66,9 @@ body .rounded {
 body .navbar {
   background-color: white;
 }
+body .navbar button{
+  font-size: 100%;
+}
 
 body nav .logo-nav {
   max-width: 160px!important;
@@ -74,9 +77,11 @@ body nav .logo-nav {
   body .navbar button{
     width: auto;
   }
-
 }
 @media (max-width:	992px) {
+
+
+}
       
 body nav .logo-nav {
   max-width: 100px!important;
@@ -157,11 +162,6 @@ body .navbar .bandera-icon img {
 body .navbar .collapse .row .ms-auto {
   width: 63%;
 }
-/* @media (max-width:	) {
-  body .navbar .collapse .row .me-auto {
-    width: 60%;
-   }
-} */
 body .navbar .navbar-collapse .fav-btn {
   border-color: var(--rojo);
   font-weight: 100 !important;
@@ -279,22 +279,16 @@ font-size: 1rem;  }
   }
   body div .carousel .banner1 {
   background-image: url(../img/Banner\ 1.png);
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   padding: 3rem 2rem;
   }
   body div .carousel .banner2 {
   background-image: url(../img/Banner\ 2.png);
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   padding: 3rem 2rem;
   }
   body div .carousel .banner3 {
   background-image: url(../img/Banner\ 3.png);
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   padding: 3rem 2rem;
   }
@@ -351,6 +345,7 @@ body h3 {
   font-weight: 500;
   text-transform: uppercase;
 }
+
 /* CARD AUTO */
 body .card-auto {
   background-color: white;
@@ -399,8 +394,12 @@ body .card-publicaciones .datos-card{
 margin-bottom: 0.5rem;
 }
 body .card-publicaciones .nombre-card{
+  font-size: 130%;
 margin-bottom: 0;
 font-weight: 500;
+}
+body .card-publicaciones .precio-card{
+  font-size: 130%;
 }
 body .card-publicaciones:hover {
   cursor: pointer;
@@ -411,12 +410,7 @@ body .card-publicaciones:hover {
   body .card-publicaciones {
     width: 11.5rem;
   }
-  body .ubicacion-card {
-    font-size: 70%;
-  }
-  body .datos-card {
-    font-size: 65%;
-  }
+
 }
 
 
@@ -515,6 +509,7 @@ body .publicidad-home {
 }
 body .publicidad-home h3 {
   color: white;
+  font-size: 140%;
 }
 body .publicidad-home p {
   font-size: 110%;
@@ -551,6 +546,7 @@ body .publicidad-home .row .publi2 {
 
   }
 }
+
 body .publicidad-home .row .publi3 {
   background-image: url("../img/publi3.png");
   background-repeat: no-repeat;
@@ -583,7 +579,11 @@ body .publicidad-home .row .publi3 h3 span{
     width: 30% !important;
   }
 }
-
+@media (max-width: 450px) {
+  body .publicidad-home .row .publi3 h3{
+font-size: 200%;
+  }
+}
 /* FOOTER */
 footer{
   font-size: 90%;
@@ -599,7 +599,7 @@ footer h4{
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 130%;
 }
 footer a{
   color: white;
@@ -671,4 +671,9 @@ font-size: 1rem;  }
     padding: 0;
   }
   
+}
+@media (max-width:	992px) {
+  body {
+    font-size: 70% !important;
+  }
 }
