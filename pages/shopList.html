@@ -1,0 +1,509 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GoCars</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light px-5 shadow pt-3 pb-2 fixed-top">
+        <div class="container-fluid">
+            <div class="row mx-auto w-100">
+                <a class="img-fluid navbar-brand logo-nav col-4 col-lg-1 logo mx-0 d-flex justify-content-center p-0"
+                    href="../index.html"><img class="img-fluid" src="../img/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler float-end my-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-lg-11 collapse navbar-collapse mx-0" id="navbarSupportedContent">
+                    <div class="row align-items-center justify-content-end">
+                        <div class="mt-4 mt-lg-0 col-12 col-lg-6 ms-auto">
+                            <div class="input-group input-lg">
+                                <input type="text" class="ps-4 py-2 form-control" placeholder="Busca tu auto"
+                                    aria-label="Busca tu auto" aria-describedby="button-addon2">
+                                <button class="btn lupa-nav" type="button" id="button-addon2"><svg class="" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <button
+                            class="mb-3 mb-lg-0 mx-auto ms-lg-4 me-lg-3 fav-btn rounded-pill col-12 col-lg-1 btn d-flex align-items-end justify-content-center"
+                            type="submit"><img src="../img/fav.png" alt="fav" class="me-1 my-auto"> Favoritos</button>
+                        <button class="mb-3 mb-lg-0 mx-lg-3 mx-auto rounded-pill col-12 col-lg-1 btn" type="submit">Mi
+                            Cuenta</button>
+                        <button class="col-12 col-lg-1 bandera-icon rounded-circle p-0"><img
+                                class="rounded-circle m-auto" src="../img/bandera.jpg" alt="nacionalidad"></button>
+                        <div
+                            class="enlaces-nav mt-2 mt-lg-0 col-12 pt-lg-3 d-flex flex-column flex-lg-row justify-content-center container-fluid">
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                Categorias
+                            </a>
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                Ofertas
+                            </a>
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                Historial
+                            </a>
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                Publica tu auto
+                            </a>
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                ¿Quienes Somos?
+                            </a>
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                Nuestra Empresa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  input d-lg-none mt-3 mx-0 px-0">
+                    <div class="input-group">
+                        <input type="text" class="ps-4 py-2 form-control" placeholder="Busca tu auto"
+                            aria-label="Busca tu auto" aria-describedby="button-addon2">
+                        <button class="btn lupa-nav" type="button" id="button-addon2"><svg class="" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg></button>
+                    </div>
+                </div>
+
+            </div>
+    </nav>
+
+    <main class="mt-5 shop-list pt-5">
+        <div class="container pt-5 my-5">
+            <div class="banner px-2 d-lg-flex justify-content-lg-between d-none">
+                <div class="mt-auto"> <img src="../img/logo-byn.png" alt="logo" class="">
+                </div>
+                <h3 class="h2 text-end align-self-center pe-4 m-0 my-auto">es hora de cumplir el sueño de tener
+                    <br><span>tu propio auto</span>
+                </h3>
+            </div>
+            <div class="row mt-5 shop-list">
+                <div class="ps-lg-0 col-12 col-lg-3">
+                    <div class="filtros bg-white d-flex">
+                        <button class="justify-self-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiltros" aria-expanded="false" aria-controls="collapseFiltros">
+                            Filtros
+                          </button>
+                        <p class="ms-auto me-5">123 Resultados</p>                        
+                        <button>Mas recientes</button>
+  
+                    </div>
+
+                    </p>
+                    <div class="collapse" id="collapseFiltros">
+                      <div class="bg-white">
+                          <div class="d-flex justify-content-between p-2"><h4 class="">Consecionarios</h4> <input class="input-tienda" type="checkbox" id="Consecionarios" value="Consecionarios"></div>
+                        
+                      </div>
+                    </div>
+                </div>
+                <div class="pe-lg-0 col-12 col-lg-9 row justify-content-center justify-content-lg-end mx-auto">
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0001.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">fiat palio 1.6</h5>
+                        <p class="datos-card px-2">
+                            2014 - 110.235 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $1.320.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Córdoba, Argentina.
+                        </p>
+                    </div>
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0002.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">Gol trend 1.6</h5>
+                        <p class="datos-card px-2">
+                            2014 - 110.235 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $1.060.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Villa de Maria, Argentina.
+                        </p>
+                    </div>
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0003.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">renault duster
+                            1.6</h5>
+                        <p class="datos-card px-2">
+                            2014 - 110.235 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $2.120.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Rio Cuarto, Argentina.
+                        </p>
+                    </div>
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0004.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">peugeot 208 -
+                            allure xs</h5>
+                        <p class="datos-card px-2">
+                            2015 - 82.938 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $1.550.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Córdoba, Argentina.
+                        </p>
+                    </div>
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0001.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">fiat palio 1.6</h5>
+                        <p class="datos-card px-2">
+                            2014 - 110.235 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $1.320.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Córdoba, Argentina.
+                        </p>
+                    </div>
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0002.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">Gol trend 1.6</h5>
+                        <p class="datos-card px-2">
+                            2014 - 110.235 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $1.060.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Villa de Maria, Argentina.
+                        </p>
+                    </div>
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0003.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">renault duster
+                            1.6</h5>
+                        <p class="datos-card px-2">
+                            2014 - 110.235 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $2.120.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Rio Cuarto, Argentina.
+                        </p>
+                    </div>
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0004.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">peugeot 208 -
+                            allure xs</h5>
+                        <p class="datos-card px-2">
+                            2015 - 82.938 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $1.550.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Córdoba, Argentina.
+                        </p>
+                    </div>
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0001.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">fiat palio 1.6</h5>
+                        <p class="datos-card px-2">
+                            2014 - 110.235 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $1.320.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Córdoba, Argentina.
+                        </p>
+                    </div>
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0002.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">Gol trend 1.6</h5>
+                        <p class="datos-card px-2">
+                            2014 - 110.235 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $1.060.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Villa de Maria, Argentina.
+                        </p>
+                    </div>
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0003.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">renault duster
+                            1.6</h5>
+                        <p class="datos-card px-2">
+                            2014 - 110.235 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $2.120.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Rio Cuarto, Argentina.
+                        </p>
+                    </div>
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0004.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">peugeot 208 -
+                            allure xs</h5>
+                        <p class="datos-card px-2">
+                            2015 - 82.938 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $1.550.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Córdoba, Argentina.
+                        </p>
+                    </div>
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0001.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">fiat palio 1.6</h5>
+                        <p class="datos-card px-2">
+                            2014 - 110.235 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $1.320.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Córdoba, Argentina.
+                        </p>
+                    </div>
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0002.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">Gol trend 1.6</h5>
+                        <p class="datos-card px-2">
+                            2014 - 110.235 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $1.060.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Villa de Maria, Argentina.
+                        </p>
+                    </div>
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0003.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">renault duster
+                            1.6</h5>
+                        <p class="datos-card px-2">
+                            2014 - 110.235 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $2.120.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Rio Cuarto, Argentina.
+                        </p>
+                    </div>
+                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                        <button id="fav-no"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                        </button>
+                        <button id="fav-si"
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                        </button>
+                        <img src="../img/0004.png" at="" class="">
+                        <h5 class="nombre-card px-2 pt-2">peugeot 208 -
+                            allure xs</h5>
+                        <p class="datos-card px-2">
+                            2015 - 82.938 km
+                        </p>
+                        <h5 class="precio-card mt-auto px-2">
+                            $1.550.000
+                        </h5>
+                        <p class="ubicacion-card px-2">
+                            Córdoba, Argentina.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="row pt-5 pb-4 py-lg-5 mx-0">
+            <div class="d-none d-lg-flex col-lg-3 col-12 justify-content-center align-items-center">
+                <img src="../img/logo-byn.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-12 col-lg-2 text-center  d-flex flex-column justify-content-start">
+                <h4 class="">
+                    contacto
+                </h4>
+                <p>Tel: 351-5324968</p>
+                <a class="mb-3" href="mailto:hola@gocars.com.ar">hola@gocars.com.ar</a>
+                <p>General Paz 203</p>
+            </div>
+            <div class="col-12 col-lg-2 text-center d-flex flex-column justify-content-start">
+                <h4 class="mt-4 mt-lg-0">
+                    secciones
+                </h4>
+                <a class="d-block mb-3" href="#"> Nuestra empresa</a>
+                <a class="d-block mb-3" href="#">Categorias</a>
+                <a class="d-block mb-3" href="#">Publica tu auto</a>
+                <a class="d-block mb-3" href="#">Historial</a>
+            </div>
+            <div class="col-12 col-lg-2 text-center d-flex flex-column justify-content-start">
+                <h4 class="mt-4 mt-lg-0">
+                    redes sociales
+                </h4>
+                <a class="d-block mb-3" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a class="d-block mb-3" href="https://www.twitter.com/" target="_blank">Twitter</a>
+                <a class="d-block mb-3" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a class="d-block mb-3" href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+            </div>
+            <div class=" d-none d-lg-block col-lg-3 col-12 my-auto me-auto">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.903574998665!2d-64.18507478438596!3d-31.41678265341574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329902eb0b2faf%3A0x4382bb478dc6e982!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses-419!2sar!4v1647900131384!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="d-lg-none col-12 d-flex justify-content-center align-items-center me-2">
+                <img src="../img/logo-byn.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="derechos py-3">
+            <p class="m-3 text-center">Todos los derechos reservados para GOCARS 2022.</p>
+        </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js" async defer></script>
+    <script src="../js/scrpits.js" async defer></script>
+</body>
+
+</html> -->

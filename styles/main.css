@@ -11,11 +11,16 @@
   src: url("../fonts/Gotham-Light.otf");
   font-weight: 100;
 }
+@font-face {
+  font-family: "gotham";
+  src: url("../fonts/Gotham\ Book\ Font.otf");
+  font-weight: 300;
+}
 
 @font-face {
   font-family: "gotham";
   src: url("../fonts/GothamMedium.ttf");
-  font-weight: 300;
+  font-weight: 400;
 }
 
 @font-face {
@@ -37,12 +42,6 @@ button:focus {
   box-shadow: none !important;
 }
 
-html,
-body {
-  background-color: #d9d8d8 !important;
-  font-family: "gotham" !important;
-  overflow-x: hidden !important;
-}
 html body {
   background-color: #d9d8d8 !important;
   font-family: "gotham" !important;
@@ -133,8 +132,8 @@ body .navbar .input-group button {
 }
 
 body .navbar .bandera-icon {
-  height: 38px;
-  width: 38px;
+  height: 36px;
+  width: 36px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background: rgb(185, 180, 180);
   background: linear-gradient(
@@ -222,6 +221,41 @@ body div .carousel {
   border-radius: 1rem;
   margin-top: 11rem;
 }
+body div .carousel h4{
+  color: #0000c8;
+}
+body div .carousel h3{
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: none;
+}
+body div .carousel p{
+  color: #89888A;
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+body div .carousel .banner1 {
+background-image: url(../img/Banner\ 1.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 16rem 7rem;
+}
+body div .carousel .banner2 {
+background-image: url(../img/Banner\ 2.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 16rem 7rem;
+}
+body div .carousel .banner3 {
+background-image: url(../img/Banner\ 3.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 16rem 7rem;
+}
 body div .carousel button:hover {
   box-shadow: none !important;
 }
@@ -231,9 +265,38 @@ body div .carousel .carousel-indicators {
   align-items: center;
   margin: 0 3% 30px 3%;
 }
-@media (max-width: 950px) {
+@media (max-width: 992px) {
   body div .carousel .carousel-indicators {
     margin-bottom: 5px;
+  }
+  body div .carousel h4{
+font-size: 1rem;  }
+  body div .carousel h3{
+    font-size: 1.5rem;
+  }
+  body div .carousel p{
+    font-size: .8rem;
+  }
+  body div .carousel .banner1 {
+  background-image: url(../img/Banner\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 2rem;
+  }
+  body div .carousel .banner2 {
+  background-image: url(../img/Banner\ 2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 2rem;
+  }
+  body div .carousel .banner3 {
+  background-image: url(../img/Banner\ 3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem 2rem;
   }
 }
 body div .carousel .carousel-indicators [data-bs-target] {
@@ -285,7 +348,7 @@ body .carousel .carousel-control-prev-icon {
 body h3 {
   font-size: 150%;
   color: #646464;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
 }
 /* CARD AUTO */
@@ -309,27 +372,15 @@ body .card-auto h5 {
 body .card-auto hr {
   background-color: #646464;
 }
-body .card-auto img {
-  height: auto;
-  width: 15rem;
-}
-@media (max-width: 640px) {
+@media (max-width: 992px) {
   body .card-auto {
-    width: 14rem;
-    height: 14rem;
-  }
-  body .card-auto img {
+    width: 10rem;
     height: auto;
-    width: 14rem;
+  }
+  body .card-auto h5 {
+    font-size: 90%;
   }
 }
-@media (max-width: 330px) {
-  body .card-auto img {
-    height: auto;
-    width: 12rem;
-  }
-}
-
 /*  PUBLICACIONES HOME*/
 
 body .publicaciones-home {
@@ -344,43 +395,35 @@ body .card-publicaciones {
   border-radius: 0 0 0.5rem 0.5rem;
   transition: all 0.1s ease;
 }
+body .card-publicaciones .datos-card{
+margin-bottom: 0.5rem;
+}
+body .card-publicaciones .nombre-card{
+margin-bottom: 0;
+font-weight: 500;
+}
 body .card-publicaciones:hover {
   cursor: pointer;
   transform: scale(1.02);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 992px) {
   body .card-publicaciones {
-    width: 14rem;
+    width: 11.5rem;
+  }
+  body .ubicacion-card {
+    font-size: 70%;
+  }
+  body .datos-card {
+    font-size: 65%;
   }
 }
-@media (max-width: 330px) {
-}
+
 
 body .fav-card {
   background-color: #ececec;
   padding: 0.5rem;
   border: none;
-}
-/* .fav-icons {
-  position: absolute;
-  margin-left: 12.9rem;
-} */
-.fav-icons button img {
-  width: 18px;
-  height: 18px;
-}
-.fav-icons:nth-child(2) {
-  display: none;
-}
-@media (max-width: 640px) {
-  .fav-icons {
-    margin-left: 10.9rem;
-  }
-  .fav-icons button img {
-    width: 16px;
-    height: 16px;
-  }
 }
 
 .nombre-card {
@@ -401,6 +444,17 @@ body .fav-card {
   color: var(--rojo);
   font-weight: 100;
   font-size: 90%;
+}
+body .fav-icons {
+  z-index: 4 !important;
+} 
+@media (max-width:	992px) {
+  body .fav-no {
+width: 2.1rem;
+  }
+  body .fav-si {
+width: 2.1rem;
+  }
 }
 
 /* NUESTRA EMPRESA HOME */
@@ -457,9 +511,13 @@ body .marcas img {
 /* PUBLICIDAD HOME */
 body .publicidad-home {
   color: white;
+  font-weight: 500;
 }
 body .publicidad-home h3 {
   color: white;
+}
+body .publicidad-home p {
+  font-size: 110%;
 }
 body .publicidad-home .row .publi1 {
   background: linear-gradient(3.58deg, #000000 -1.86%, rgba(255, 255, 255, 0) 27.3%), url("../img/publi1.png");
@@ -480,12 +538,17 @@ body .publicidad-home .row .publi2 {
 @media (max-width: 992px) {
   body .publicidad-home .row .publi1 {
     width: 100%;
+    border-radius: 0 !important;
   }
   body .publicidad-home .row .publi2 {
     width: 100%;
+    border-radius: 0 !important;
+
   }
   body .publicidad-home .row .publi3 {
     background-image: url("../img/publicidad-mobile.png");
+    border-radius: 0 !important;
+
   }
 }
 body .publicidad-home .row .publi3 {
@@ -522,18 +585,21 @@ body .publicidad-home .row .publi3 h3 span{
 }
 
 /* FOOTER */
+footer{
+  font-size: 90%;
+}
 footer .row{
   background-color: var(--azul);
   color: white;
   font-weight: 100;
-
 }
 footer h4{
   background-color: var(--azul);
   color: white;
-  font-weight: 300;
+  font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  font-size: 1.2rem;
 }
 footer a{
   color: white;
@@ -564,4 +630,45 @@ footer .derechos {
   text-align: center;
   font-weight: 100;
   color: white;
+}
+
+/* SHOP LIST */
+
+body .banner {
+  background-image: url(../img/banner-shoplist.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 2rem;
+  height: 15rem;
+}
+body .banner h3{
+color: white;
+width: 30%;
+font-weight: 100;
+}
+body .banner h3 span{
+font-weight: 600;
+}
+body .banner img{
+width: 9rem;
+}
+@media (max-width:	1200px) {
+  body .banner h3{
+    font-size: 1.7rem;
+    }
+    body .banner img{
+      width: 7rem;
+      }
+}
+@media (max-width: 992px) {
+  body .shop-list .card-publicaciones{
+    width: 9rem;
+  }
+  body .shop-list .card-publicaciones h5{
+font-size: 1rem;  }
+  body .shop-list .row{
+    padding: 0;
+  }
+  
 }
