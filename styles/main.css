@@ -689,6 +689,6 @@ font-size: 1rem;  }
 }
 @media (max-width:	992px) {
   body {
-    font-size: 80% !important;
+    font-size: 100% !important;
   }
 }
