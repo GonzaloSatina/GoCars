@@ -598,9 +598,6 @@ font-size: 200%;
   }
 }
 /* FOOTER */
-footer{
-  font-size: 90%;
-}
 footer .row{
   background-color: var(--azul);
   color: white;
@@ -688,6 +685,9 @@ font-size: 1rem;  }
 }
 @media (max-width:	992px) {
   body {
-    font-size: 100% !important;
+    font-size: 70% !important;
+  }
+  footer a, footer p{
+    font-size: 105% !important;
   }
 }
