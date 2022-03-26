@@ -824,6 +824,7 @@ width: 9rem;
       }
 }
 
+
 @media (max-width: 992px) {
   body .shop-list .card-publicaciones {
 width: 45%;  }
@@ -832,6 +833,9 @@ font-size: 1rem;  }
   body .shop-list .row{
     padding: 0;
   }
+  body .shop-list .card-publicaciones:last-of-type {
+    margin-right: auto !important;
+    margin-left: 3.3% !important; }
   
 }
 @media (max-width:	992px) {
