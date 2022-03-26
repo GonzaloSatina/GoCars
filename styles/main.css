@@ -677,7 +677,7 @@ body .nav-shop {
 body .filtros-sm{
   position: fixed;
   z-index: 9;
-  top: 13.5%;
+  top: 8rem;
   left: 0;
   
 }
