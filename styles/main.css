@@ -411,9 +411,13 @@ body .publicaciones-home {
 body .card-publicaciones {
   position: relative !important;
   background-color: white;
-  width: 38%;
+  width: 28%;
   border-radius: 0.5rem;
   transition: all 0.1s ease;
+  text-decoration: none;
+}
+body .publicaciones-home .card-publicaciones {
+  width: 38%;
 }
 body .card-publicaciones img{
   border-radius:0.5rem 0.5rem 0 0;
