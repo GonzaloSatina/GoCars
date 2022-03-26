@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light px-5 shadow pt-3 pb-2 fixed-top">
+    <nav class="navbar nav-shop navbar-expand-lg navbar-light px-lg-5 pt-2 pb-3 pt-lg-3 pb-lg-2 fixed-top">
         <div class="container-fluid">
             <div class="row mx-auto w-100">
-                <a class="img-fluid navbar-brand logo-nav col-4 col-lg-1 logo mx-0 d-flex justify-content-center p-0"
-                    href="../index.html"><img class="img-fluid" src="../img/logo.png" alt="Logo"></a>
+                <a class="navbar-brand logo-nav col-4 col-lg-1 logo mx-0 d-flex justify-content-center p-0"
+                    href="../index.html"><img class="me-auto" src="../img/logo.png" alt="Logo"></a>
                 <button class="navbar-toggler float-end my-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -46,7 +46,7 @@
                             <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
                                 Categorias
                             </a>
-                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                            <a href="pages/shopList.html" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
                                 Ofertas
                             </a>
                             <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12  input d-lg-none mt-3 mx-0 px-0">
+                <div class="col-12  input d-lg-none mt-1 mt-lg-3 mx-0 px-0">
                     <div class="input-group">
                         <input type="text" class="ps-4 py-2 form-control" placeholder="Busca tu auto"
                             aria-label="Busca tu auto" aria-describedby="button-addon2">
@@ -80,7 +80,7 @@
     </nav>
 
     <main class="mt-5 shop-list pt-5">
-        <div class="container pt-5 my-5">
+        <div class="container my-5 pt-2 pt-lg-0">
             <div class="banner px-2 d-lg-flex justify-content-lg-between d-none">
                 <div class="mt-auto"> <img src="../img/logo-byn.png" alt="logo" class="">
                 </div>
@@ -89,32 +89,603 @@
                 </h3>
             </div>
             <div class="row mt-5 shop-list">
-                <div class="ps-lg-0 col-12 col-lg-3">
-                    <div class="filtros bg-white d-flex">
-                        <button class="justify-self-start" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiltros" aria-expanded="false" aria-controls="collapseFiltros">
-                            Filtros
-                          </button>
-                        <p class="ms-auto me-5">123 Resultados</p>                        
-                        <button>Mas recientes</button>
-  
+                <div class="filtros-sm w-100 d-lg-none px-0 col-12 col-lg-3">
+                    <div class="d-flex ">
+                        <button class="py-3 px-3 d-flex justify-content-between fw-bold" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFiltros" aria-expanded="false"
+                            aria-controls="collapseFiltros"><span class="me-auto">Filtros</span>
+                            <span class="me-3">123 resultados</span>
+                            <span class="me-2">Más recientes</span>
+                            <img src="../img/Vector.png" alt="vector" class="vector my-auto">
+                        </button>
                     </div>
-
-                    </p>
-                    <div class="collapse" id="collapseFiltros">
-                      <div class="bg-white">
-                          <div class="d-flex justify-content-between p-2"><h4 class="">Consecionarios</h4> <input class="input-tienda" type="checkbox" id="Consecionarios" value="Consecionarios"></div>
-                        
-                      </div>
+                    <div class="collapse w-100 mx-auto" id="collapseFiltros">
+                        <div class="bg-white pb-3">
+                            <div class="mx-0 p-3 filtrar-por">
+                                <h4 class="mb-0 filtrar-por">Filtrar por:</h4>
+                            </div>
+                            <!-- Filtro -->
+                            <div class="">
+                                <button class="tipo-filtro mx-auto py-2 d-flex justify-content-between" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFiltros1" aria-expanded="false"
+                                    aria-controls="collapseFiltros1">Tiendas oficiales <img src="../img/Vector.png"
+                                        alt="vector" class="vector my-auto"></button>
+                            </div>
+                            <div class="p-3 collapse mx-auto" id="collapseFiltros1">
+                                <div class="d-flex justify-content-between">
+                                    <label class="form-check-label w-100" for="consecionarios">
+                                        Consecionarios <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="consecionarios">
+                                </div>
+                            </div>
+                            <!-- Filtro -->
+                            <div class="">
+                                <button class="tipo-filtro mx-auto py-2 d-flex justify-content-between" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFiltros2" aria-expanded="false"
+                                    aria-controls="collapseFiltros2">Condición <img src="../img/Vector.png" alt="vector"
+                                        class="vector my-auto"></button>
+                            </div>
+                            <div class="p-3 collapse mx-auto" id="collapseFiltros2">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="nuevo">
+                                        Nuevo <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="nuevo">
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <label class="form-check-label w-100" for="usado">
+                                        Usado <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="usado">
+                                </div>
+                            </div>
+                            <!-- Filtro -->
+                            <div class="">
+                                <button class="tipo-filtro mx-auto py-2 d-flex justify-content-between" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFiltros3" aria-expanded="false"
+                                    aria-controls="collapseFiltros3">Ubicación <img src="../img/Vector.png" alt="vector"
+                                        class="vector my-auto"></button>
+                            </div>
+                            <div class="p-3 collapse mx-auto" id="collapseFiltros3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="capitalFederal">
+                                        Capital Federal <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="capitalFederal">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="gbaOeste">
+                                        Bs. As. G.B.A Oeste <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="gbaOeste">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="gbaNorte">
+                                        Bs. As G.B.A Norte <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="gbaNorte">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="cordoba">
+                                        Córdoba <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="cordoba">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="gbaSur">
+                                        Bs. As G.B.A Sur <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="gbaSur">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="bsasInterior">
+                                        Buenos Aires Interior <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="bsasInterior">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="entreRios">
+                                        Entre Ríos <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="entreRios">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="santaFe">
+                                        Santa Fe <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="santaFe">
+                                </div>
+                                <button class="w-auto ver-todos-filtro px-0">Ver todos</button>
+                            </div>
+                            <!-- Filtro -->
+                            <div class="">
+                                <button class="tipo-filtro mx-auto py-2 d-flex justify-content-between" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFiltros4" aria-expanded="false"
+                                    aria-controls="collapseFiltros4">Marcas<img src="../img/Vector.png" alt="vector"
+                                        class="vector my-auto"></button>
+                            </div>
+                            <div class="p-3 collapse mx-auto" id="collapseFiltros4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="chevrolet">
+                                        Chevrolet <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="chevrolet">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="bmw">
+                                        BMW <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="bmw">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="audi">
+                                        Audi <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="audi">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="renault">
+                                        Renault <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="renault">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="citroen">
+                                        Citroen <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="citroen">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="peugeot">
+                                        Peugeot <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="peugeot">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="dodge">
+                                        Dodge <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="dodge">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="volkswagen">
+                                        Volkswagen <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="volkswagen">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="toyota">
+                                        Toyota <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="toyota">
+                                </div>
+                                <button class="w-auto ver-todos-filtro px-0">Ver todos</button>
+                            </div>
+                            <!-- Filtro -->
+                            <div class="">
+                                <button class="tipo-filtro mx-auto py-2 d-flex justify-content-between" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFiltros5" aria-expanded="false"
+                                    aria-controls="collapseFiltros5">Modelo<img src="../img/Vector.png" alt="vector"
+                                        class="vector my-auto"></button>
+                            </div>
+                            <div class="p-3 collapse mx-auto" id="collapseFiltros5">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="tracker">
+                                        Tracker <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="tracker">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="onix">
+                                        Onix <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="onix">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="cruze2">
+                                        Cruze II <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="cruze2">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="s10">
+                                        S10 <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="s10">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="onixPlus">
+                                        Onix plus <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="onixPlus">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="duster">
+                                        Duster <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="duster">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="ecosport">
+                                        Ecosport <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="ecosport">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="sw4">
+                                        SW4 <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="sw4">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="hylux">
+                                        Hylux <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="hylux">
+                                </div>
+                                <button class="w-auto ver-todos-filtro px-0">Ver todos</button>
+                            </div>
+                            <!-- Filtro -->
+                            <div class="">
+                                <button class="tipo-filtro mx-auto py-2 d-flex justify-content-between" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFiltros6" aria-expanded="false"
+                                    aria-controls="collapseFiltros6">Rango de precio<img src="../img/Vector.png"
+                                        alt="vector" class="vector my-auto"></button>
+                            </div>
+                            <div class="p-3 collapse mx-auto" id="collapseFiltros6">
+                                <div class="">
+                                    <button class="rango-precios d-block ps-0 mb-2">
+                                        <span>Hasta $600.000</span><span> (123)</span>
+                                    </button>
+                                    <button class="rango-precios d-block ps-0 mb-2">
+                                        <span>$600.000 a $1.200.000</span><span> (123)</span>
+                                    </button>
+                                    <button class="rango-precios d-block ps-0 mb-2">
+                                        <span>
+                                            Más de $1.500.000</span><span> (123)</span>
+                                    </button>
+                                    <div class="rango-precio-input d-flex justify-content-between">
+                                        <input id="precio-minimo" data-testid="precio-minimo" pattern="[0-9]*"
+                                            placeholder="Mínimo" enterkeyhint="go" rows="1"
+                                            class="input-precio me-1 rounded-pill px-3" maxlength="120">
+                                        <input id="precio-maximo" data-testid="precio-maximo" pattern="[0-9]*"
+                                            placeholder="Máximo" enterkeyhint="go" rows="1"
+                                            class="input-precio ms-1 rounded-pill px-3" maxlength="120">
+                                        <button data-testid="submit-price" type="submit"
+                                            class="ms-auto submit-precio-filtro bg-white border-0 rounded-circle"
+                                            aria-label="Aplicar"><img src="../img/submit-filtro-precio.png"
+                                                alt="submit"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Filtro -->
+                            <div class="">
+                                <button class="tipo-filtro mx-auto py-2 d-flex justify-content-between" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFiltros7" aria-expanded="false"
+                                    aria-controls="collapseFiltros7">Puertas<img src="../img/Vector.png" alt="vector"
+                                        class="vector my-auto"></button>
+                            </div>
+                            <div class="p-3 collapse mx-auto" id="collapseFiltros7">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="5puertas">
+                                        5 Puertas <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="5puertas">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="3puertas">
+                                        3 Puertas <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="3puertas">
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <label class="form-check-label w-100" for="utilitario">
+                                        Utilitario <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="utilitario">
+                                </div>
+                            </div>
+                            <!-- Filtro -->
+                            <div class="">
+                                <button class="tipo-filtro mx-auto py-2 d-flex justify-content-between" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFiltros8" aria-expanded="false"
+                                    aria-controls="collapseFiltros8">Combustible<img src="../img/Vector.png"
+                                        alt="vector" class="vector my-auto"></button>
+                            </div>
+                            <div class="p-3 collapse mx-auto" id="collapseFiltros8">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="nafta">
+                                        Nafta <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="nafta">
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <label class="form-check-label w-100" for="diesel">
+                                        Diesel <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="diesel">
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <label class="form-check-label w-100" for="gas">
+                                        Gas <span class="cantidad-filtro">(123)</span>
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="gas">
+                                </div>
+                            </div>
+                            <!-- Filtro -->
+                        </div>
                     </div>
                 </div>
-                <div class="pe-lg-0 col-12 col-lg-9 row justify-content-center justify-content-lg-end mx-auto">
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                <div class="filtros d-none d-lg-block px-0 ps-lg-3 col-12 col-lg-3">
+                    <div class="fw-bold"><span class="">Autos, Motos y Otros</span></div>
+                    <div class="d-flex">
+                        <span class="me-3">123 resultados</span>
+                        <button class="recientes-btn">Más recientes <img src="../img/Vector.png" alt="vector"
+                                class="vector my-auto"></button>
+                    </div>
+                    <div class="w-100 mx-auto">
+                        <!-- Filtro -->
+                        <div class="mt-4">
+                            <h5 class="tipo-filtro">Tiendas oficiales </h5>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <button id="consecionarios" class="" for="consecionarios">
+                                    Consecionarios <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Filtro -->
+                        <div class="mt-4">
+                            <h5 class="tipo-filtro" >Condición </h5>
+                        </div>
+                        <div class="">
+                            <div class=" mb-2">
+                                <button id="nuevo" class="" for="nuevo">
+                                    Nuevo <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class="">
+                                <button id="usado" class="" for="usado">
+                                    Usado <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Filtro -->
+                        <div class="mt-4">
+                            <h5 class="tipo-filtro" >Ubicación </h5>
+                        </div>
+                        <div class="">
+                            <div class=" mb-2">
+                                <button id="capitalFederal" class="" for="capitalFederal">
+                                    Capital Federal <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="gbaOeste" class="" for="gbaOeste">
+                                    Bs. As. G.B.A Oeste <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="gbaNorte" class="" for="gbaNorte">
+                                    Bs. As G.B.A Norte <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="cordoba" class="" for="cordoba">
+                                    Córdoba <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="gbaSur" class="" for="gbaSur">
+                                    Bs. As G.B.A Sur <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="bsasInterior" class="" for="bsasInterior">
+                                    Buenos Aires Interior <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="entreRios" class="" for="entreRios">
+                                    Entre Ríos <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="santaFe" class="" for="santaFe">
+                                    Santa Fe <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <button class="w-auto ver-todos-filtro px-0">Ver todos</button>
+                        </div>
+                        <!-- Filtro -->
+                        <div class="mt-4">
+                            <h5 class="tipo-filtro" >Marcas</h5>
+                        </div>
+                        <div class="">
+                            <div class=" mb-2">
+                                <button id="chevrolet" class="" for="chevrolet">
+                                    Chevrolet <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="bmw" class="" for="bmw">
+                                    BMW <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="audi" class="" for="audi">
+                                    Audi <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="renault" class="" for="renault">
+                                    Renault <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="citroen" class="" for="citroen">
+                                    Citroen <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="peugeot" class="" for="peugeot">
+                                    Peugeot <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="dodge" class="" for="dodge">
+                                    Dodge <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="volkswagen" class="" for="volkswagen">
+                                    Volkswagen <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="toyota" class="" for="toyota">
+                                    Toyota <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <button class="w-auto ver-todos-filtro px-0">Ver todos</button>
+                        </div>
+                        <!-- Filtro -->
+                        <div class="mt-4">
+                            <h5 class="tipo-filtro" >Modelo</h5>
+                        </div>
+                        <div class="">
+                            <div class=" mb-2">
+                                <button id="tracker" class="" for="tracker">
+                                    Tracker <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="onix" class="" for="onix">
+                                    Onix <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="cruze2" class="" for="cruze2">
+                                    Cruze II <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="s10" class="" for="s10">
+                                    S10 <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="onixPlus" class="" for="onixPlus">
+                                    Onix plus <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="duster" class="" for="duster">
+                                    Duster <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="ecosport" class="" for="ecosport">
+                                    Ecosport <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="sw4" class="" for="sw4">
+                                    SW4 <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="hylux" class="" for="hylux">
+                                    Hylux <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <button class="w-auto ver-todos-filtro px-0">Ver todos</button>
+                        </div>
+                        <!-- Filtro -->
+                        <div class="mt-4">
+                            <h5 class="tipo-filtro">Rango de precio</h5>
+                        </div>
+                        <div class="">
+                            <div class="">
+                                <button class="rango-precios mb-2">
+                                    <span>Hasta $600.000</span><span> (123)</span>
+                                </button>
+                                <button class="rango-precios mb-2">
+                                    <span>$600.000 a $1.200.000</span><span> (123)</span>
+                                </button>
+                                <button class="rango-precios mb-2">
+                                    <span>
+                                        Más de $1.500.000</span><span> (123)</span>
+                                </button>
+                                <div class="rango-precio-input d-flex justify-content-between">
+                                    <input id="precio-minimo" data-testid="precio-minimo" pattern="[0-9]*"
+                                        placeholder="Mínimo" enterkeyhint="go" rows="1"
+                                        class="input-precio me-1 rounded-pill px-3" maxlength="120">
+                                    <input id="precio-maximo" data-testid="precio-maximo" pattern="[0-9]*"
+                                        placeholder="Máximo" enterkeyhint="go" rows="1"
+                                        class="input-precio ms-1 rounded-pill px-3" maxlength="120">
+                                    <button data-testid="submit-price" type="submit"
+                                        class="ms-auto submit-precio-filtro bg-white border-0 rounded-circle"
+                                        aria-label="Aplicar"><img src="../img/submit-filtro-precio.png"
+                                            alt="submit"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Filtro -->
+                        <div class="mt-4">
+                            <h5 class="tipo-filtro" >Puertas</h5>
+                        </div>
+                        <div class="">
+                            <div class=" mb-2">
+                                <button id="5puertas" class="" for="5puertas">
+                                    5 Puertas <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="3puertas" class="" for="3puertas">
+                                    3 Puertas <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class="">
+                                <button id="utilitario" class="" for="utilitario">
+                                    Utilitario <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Filtro -->
+                        <div class="mt-4">
+                            <h5 class="tipo-filtro">Combustible</h5>
+                        </div>
+                        <div class="">
+                            <div class=" mb-2">
+                                <button id="nafta" class="" for="nafta">
+                                    Nafta <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class=" mb-2">
+                                <button id="diesel" class="" for="diesel">
+                                    Diesel <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                            <div class="">
+                                <button id="gas" class="" for="gas">
+                                    Gas <span class="cantidad-filtro">(123)</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Filtro -->
+                    </div>
+                </div>
+                <div class="pe-lg-0 col-12 col-lg-9 row justify-content-center justify-content-lg-end mx-auto h-100">
+                    <div class="mb-3 mb-lg-4 mx-2 mx-lg-3 px-0 shadow-card card-publicaciones d-flex flex-column">
                         <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-lg-2 fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-no.png" alt="fav no" class="fav-no">
                         </button>
                         <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-si.png" alt="fav si" class="fav-si">
                         </button>
                         <img src="../img/0001.png" at="" class="">
@@ -129,13 +700,13 @@
                             Córdoba, Argentina.
                         </p>
                     </div>
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                    <div class="mb-3 mb-lg-4 mx-2 mx-lg-3 px-0 shadow-card card-publicaciones d-flex flex-column">
                         <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-lg-2 fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-no.png" alt="fav no" class="fav-no">
                         </button>
                         <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-si.png" alt="fav si" class="fav-si">
                         </button>
                         <img src="../img/0002.png" at="" class="">
@@ -150,13 +721,13 @@
                             Villa de Maria, Argentina.
                         </p>
                     </div>
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                    <div class="mb-3 mb-lg-4 mx-2 mx-lg-3 px-0 shadow-card card-publicaciones d-flex flex-column">
                         <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-lg-2 fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-no.png" alt="fav no" class="fav-no">
                         </button>
                         <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-si.png" alt="fav si" class="fav-si">
                         </button>
                         <img src="../img/0003.png" at="" class="">
@@ -172,13 +743,13 @@
                             Rio Cuarto, Argentina.
                         </p>
                     </div>
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                    <div class="mb-3 mb-lg-4 mx-2 mx-lg-3 px-0 shadow-card card-publicaciones d-flex flex-column">
                         <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-lg-2 fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-no.png" alt="fav no" class="fav-no">
                         </button>
                         <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-si.png" alt="fav si" class="fav-si">
                         </button>
                         <img src="../img/0004.png" at="" class="">
@@ -194,13 +765,13 @@
                             Córdoba, Argentina.
                         </p>
                     </div>
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                    <div class="mb-3 mb-lg-4 mx-2 mx-lg-3 px-0 shadow-card card-publicaciones d-flex flex-column">
                         <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-lg-2 fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-no.png" alt="fav no" class="fav-no">
                         </button>
                         <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-si.png" alt="fav si" class="fav-si">
                         </button>
                         <img src="../img/0001.png" at="" class="">
@@ -215,13 +786,13 @@
                             Córdoba, Argentina.
                         </p>
                     </div>
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                    <div class="mb-3 mb-lg-4 mx-2 mx-lg-3 px-0 shadow-card card-publicaciones d-flex flex-column">
                         <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-lg-2 fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-no.png" alt="fav no" class="fav-no">
                         </button>
                         <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-si.png" alt="fav si" class="fav-si">
                         </button>
                         <img src="../img/0002.png" at="" class="">
@@ -236,13 +807,13 @@
                             Villa de Maria, Argentina.
                         </p>
                     </div>
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                    <div class="mb-3 mb-lg-4 mx-2 mx-lg-3 px-0 shadow-card card-publicaciones d-flex flex-column">
                         <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-lg-2 fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-no.png" alt="fav no" class="fav-no">
                         </button>
                         <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-si.png" alt="fav si" class="fav-si">
                         </button>
                         <img src="../img/0003.png" at="" class="">
@@ -258,13 +829,13 @@
                             Rio Cuarto, Argentina.
                         </p>
                     </div>
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                    <div class="mb-3 mb-lg-4 mx-2 mx-lg-3 px-0 shadow-card card-publicaciones d-flex flex-column">
                         <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-lg-2 fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-no.png" alt="fav no" class="fav-no">
                         </button>
                         <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-si.png" alt="fav si" class="fav-si">
                         </button>
                         <img src="../img/0004.png" at="" class="">
@@ -280,13 +851,13 @@
                             Córdoba, Argentina.
                         </p>
                     </div>
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
+                    <div class="mb-3 mb-lg-4 mx-2 mx-lg-3 px-0 shadow-card card-publicaciones d-flex flex-column">
                         <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-lg-2 fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-no.png" alt="fav no" class="fav-no">
                         </button>
                         <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
+                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons position-absolute top-0 end-0">
                             <img src="../img/fav-si.png" alt="fav si" class="fav-si">
                         </button>
                         <img src="../img/0001.png" at="" class="">
@@ -296,157 +867,6 @@
                         </p>
                         <h5 class="precio-card mt-auto px-2">
                             $1.320.000
-                        </h5>
-                        <p class="ubicacion-card px-2">
-                            Córdoba, Argentina.
-                        </p>
-                    </div>
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
-                        <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
-                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
-                        </button>
-                        <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
-                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
-                        </button>
-                        <img src="../img/0002.png" at="" class="">
-                        <h5 class="nombre-card px-2 pt-2">Gol trend 1.6</h5>
-                        <p class="datos-card px-2">
-                            2014 - 110.235 km
-                        </p>
-                        <h5 class="precio-card mt-auto px-2">
-                            $1.060.000
-                        </h5>
-                        <p class="ubicacion-card px-2">
-                            Villa de Maria, Argentina.
-                        </p>
-                    </div>
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
-                        <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
-                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
-                        </button>
-                        <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
-                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
-                        </button>
-                        <img src="../img/0003.png" at="" class="">
-                        <h5 class="nombre-card px-2 pt-2">renault duster
-                            1.6</h5>
-                        <p class="datos-card px-2">
-                            2014 - 110.235 km
-                        </p>
-                        <h5 class="precio-card mt-auto px-2">
-                            $2.120.000
-                        </h5>
-                        <p class="ubicacion-card px-2">
-                            Rio Cuarto, Argentina.
-                        </p>
-                    </div>
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
-                        <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
-                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
-                        </button>
-                        <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
-                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
-                        </button>
-                        <img src="../img/0004.png" at="" class="">
-                        <h5 class="nombre-card px-2 pt-2">peugeot 208 -
-                            allure xs</h5>
-                        <p class="datos-card px-2">
-                            2015 - 82.938 km
-                        </p>
-                        <h5 class="precio-card mt-auto px-2">
-                            $1.550.000
-                        </h5>
-                        <p class="ubicacion-card px-2">
-                            Córdoba, Argentina.
-                        </p>
-                    </div>
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
-                        <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
-                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
-                        </button>
-                        <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
-                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
-                        </button>
-                        <img src="../img/0001.png" at="" class="">
-                        <h5 class="nombre-card px-2 pt-2">fiat palio 1.6</h5>
-                        <p class="datos-card px-2">
-                            2014 - 110.235 km
-                        </p>
-                        <h5 class="precio-card mt-auto px-2">
-                            $1.320.000
-                        </h5>
-                        <p class="ubicacion-card px-2">
-                            Córdoba, Argentina.
-                        </p>
-                    </div>
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
-                        <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
-                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
-                        </button>
-                        <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
-                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
-                        </button>
-                        <img src="../img/0002.png" at="" class="">
-                        <h5 class="nombre-card px-2 pt-2">Gol trend 1.6</h5>
-                        <p class="datos-card px-2">
-                            2014 - 110.235 km
-                        </p>
-                        <h5 class="precio-card mt-auto px-2">
-                            $1.060.000
-                        </h5>
-                        <p class="ubicacion-card px-2">
-                            Villa de Maria, Argentina.
-                        </p>
-                    </div>
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
-                        <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
-                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
-                        </button>
-                        <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
-                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
-                        </button>
-                        <img src="../img/0003.png" at="" class="">
-                        <h5 class="nombre-card px-2 pt-2">renault duster
-                            1.6</h5>
-                        <p class="datos-card px-2">
-                            2014 - 110.235 km
-                        </p>
-                        <h5 class="precio-card mt-auto px-2">
-                            $2.120.000
-                        </h5>
-                        <p class="ubicacion-card px-2">
-                            Rio Cuarto, Argentina.
-                        </p>
-                    </div>
-                    <div class="mb-4 mx-2 mx-lg-3 px-0 shadow card-publicaciones d-flex flex-column">
-                        <button id="fav-no"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
-                            <img src="../img/fav-no.png" alt="fav no" class="fav-no">
-                        </button>
-                        <button id="fav-si"
-                            class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons w-auto position-absolute top-0 end-0">
-                            <img src="../img/fav-si.png" alt="fav si" class="fav-si">
-                        </button>
-                        <img src="../img/0004.png" at="" class="">
-                        <h5 class="nombre-card px-2 pt-2">peugeot 208 -
-                            allure xs</h5>
-                        <p class="datos-card px-2">
-                            2015 - 82.938 km
-                        </p>
-                        <h5 class="precio-card mt-auto px-2">
-                            $1.550.000
                         </h5>
                         <p class="ubicacion-card px-2">
                             Córdoba, Argentina.
@@ -462,35 +882,35 @@
             <div class="d-none d-lg-flex col-lg-3 col-12 justify-content-center align-items-center">
                 <img src="../img/logo-byn.png" alt="" class="img-fluid">
             </div>
-            <div class="col-12 col-lg-2 text-center  d-flex flex-column justify-content-start">
+            <div class="col-12 col-lg-2 text-center d-flex flex-column justify-content-start">
                 <h4 class="">
                     contacto
                 </h4>
-                <p>Tel: 351-5324968</p>
-                <a class="mb-3" href="mailto:hola@gocars.com.ar">hola@gocars.com.ar</a>
-                <p>General Paz 203</p>
+                <p class="mb-2 mb-lg-3">Tel: 351-5324968</p>
+                <a class="mb-lg-3 mb-2" href="mailto:hola@gocars.com.ar">hola@gocars.com.ar</a>
+                <p class="mb-2 mb-lg-3">General Paz 203</p>
             </div>
             <div class="col-12 col-lg-2 text-center d-flex flex-column justify-content-start">
                 <h4 class="mt-4 mt-lg-0">
                     secciones
                 </h4>
-                <a class="d-block mb-3" href="#"> Nuestra empresa</a>
-                <a class="d-block mb-3" href="#">Categorias</a>
-                <a class="d-block mb-3" href="#">Publica tu auto</a>
-                <a class="d-block mb-3" href="#">Historial</a>
+                <a class="d-block mb-lg-3 mb-2" href="#"> Nuestra empresa</a>
+                <a class="d-block mb-lg-3 mb-2" href="#">Categorias</a>
+                <a class="d-block mb-lg-3 mb-2" href="#">Publica tu auto</a>
+                <a class="d-block mb-lg-3 mb-2" href="#">Historial</a>
             </div>
             <div class="col-12 col-lg-2 text-center d-flex flex-column justify-content-start">
                 <h4 class="mt-4 mt-lg-0">
                     redes sociales
                 </h4>
-                <a class="d-block mb-3" href="https://www.facebook.com/" target="_blank">Facebook</a>
-                <a class="d-block mb-3" href="https://www.twitter.com/" target="_blank">Twitter</a>
-                <a class="d-block mb-3" href="https://www.instagram.com/" target="_blank">Instagram</a>
-                <a class="d-block mb-3" href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+                <a class="d-block mb-lg-3 mb-2" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a class="d-block mb-lg-3 mb-2" href="https://www.twitter.com/" target="_blank">Twitter</a>
+                <a class="d-block mb-lg-3 mb-2" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a class="d-block mb-lg-3 mb-2" href="https://www.linkedin.com/" target="_blank">Linkedin</a>
             </div>
             <div class=" d-none d-lg-block col-lg-3 col-12 my-auto me-auto">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.903574998665!2d-64.18507478438596!3d-31.41678265341574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329902eb0b2faf%3A0x4382bb478dc6e982!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses-419!2sar!4v1647900131384!5m2!1ses-419!2sar"
+                <iframe class=""
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12525.408239431039!2d-64.19188614071106!3d-31.416451978954928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329902eb0b2faf%3A0x4382bb478dc6e982!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses-419!2sar!4v1647730084807!5m2!1ses-419!2sar"
                     style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="d-lg-none col-12 d-flex justify-content-center align-items-center me-2">
@@ -506,4 +926,4 @@
     <script src="../js/scrpits.js" async defer></script>
 </body>
 
-</html> -->
+</html>

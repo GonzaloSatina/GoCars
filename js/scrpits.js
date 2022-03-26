@@ -19,3 +19,7 @@ function direccionPaginacion(e) {
       formulario.scrollIntoView();
   }
 }
+
+
+// BOTON FAV CARDS
+
