@@ -411,7 +411,7 @@ body .publicaciones-home {
 body .card-publicaciones {
   position: relative !important;
   background-color: white;
-  width: 28%;
+  width: 38%;
   border-radius: 0.5rem;
   transition: all 0.1s ease;
 }
