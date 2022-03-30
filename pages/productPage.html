@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GoCars</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar nav-shop navbar-expand-lg navbar-light px-lg-5 pt-2 pb-3 pt-lg-3 pb-lg-2 fixed-top">
+        <div class="container-fluid">
+            <div class="row mx-auto w-100">
+                <a class="navbar-brand logo-nav col-4 col-lg-1 logo mx-0 d-flex justify-content-center p-0"
+                    href="../index.html"><img class="me-auto" src="../img/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler float-end my-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-lg-11 collapse navbar-collapse mx-0" id="navbarSupportedContent">
+                    <div class="row align-items-center justify-content-end">
+                        <div class="mt-4 mt-lg-0 col-12 col-lg-6 ms-auto">
+                            <div class="input-group input-lg">
+                                <button
+                                    class="btn btn-select-nav rounded-end rounded-pill btn-outline-secondary dropdown-toggle"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">Córdoba</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item fw-lighter" href="#">CABA</a></li>
+                                    <li><a class="dropdown-item fw-lighter" href="#">Santa Fe</a></li>
+                                    <li><a class="dropdown-item fw-lighter" href="#">Entre Ríos</a></li>
+                                </ul>
+                                <input type="text" class="py-2 form-control" placeholder="Busca tu auto"
+                                    aria-label="Busca tu auto" aria-describedby="button-addon2">
+                                <button class="btn lupa-nav rounded-start rounded-pill" type="button"
+                                    id="button-addon2"><svg class="" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <button
+                            class="mb-3 mb-lg-0 mx-auto ms-lg-4 me-lg-3 fav-btn rounded-pill col-12 col-lg-1 btn d-flex align-items-end justify-content-center"
+                            type="submit"><img src="../img/fav.png" alt="fav" class="me-1 my-auto"> Favoritos</button>
+                        <button onclick="location.href='miCuenta.html'" class="mb-3 mb-lg-0 mx-lg-3 mx-auto rounded-pill col-12 col-lg-1 btn" type="submit">Mi
+                            Cuenta</button>
+                        <button class="col-12 col-lg-1 bandera-icon rounded-circle p-0"><img
+                                class="rounded-circle m-auto" src="../img/bandera.jpg" alt="nacionalidad"></button>
+                        <div
+                            class="enlaces-nav mt-2 mt-lg-0 col-12 pt-lg-3 d-flex flex-column flex-lg-row justify-content-center container-fluid">
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                Categorias
+                            </a>
+                            <a href="shopList.html" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                Ofertas
+                            </a>
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                Historial
+                            </a>
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                Publica tu auto
+                            </a>
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                ¿Quienes Somos?
+                            </a>
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                Nuestra Empresa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  input d-lg-none mt-1 mt-lg-3 mx-0 px-0">
+                    <div class="input-group">
+                        <button
+                            class="btn btn-select-nav rounded-end rounded-pill btn-outline-secondary dropdown-toggle"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">Córdoba</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item fw-lighter" href="#">CABA</a></li>
+                            <li><a class="dropdown-item fw-lighter" href="#">Santa Fe</a></li>
+                            <li><a class="dropdown-item fw-lighter" href="#">Entre Ríos</a></li>
+                        </ul>
+                        <input type="text" class="ps-3 py-2 form-control" placeholder="Busca tu auto"
+                            aria-label="Busca tu auto" aria-describedby="button-addon2">
+                        <button class="btn lupa-nav rounded-start rounded-pill" type="button" id="button-addon2"><svg
+                                class="" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg></button>
+                    </div>
+                </div>
+
+            </div>
+    </nav>
+
+    <main class="container row mx-auto product-page">
+        <div class="product col-12 bg-white p-lg-4 rounded-xl shadow-lg row mx-auto">
+            <div class="col-12 col-lg-7">
+                <div class="datos-articulo d-lg-none d-block">
+                    <h5>Vendedor con <span class="text-primary">identidad verificada</span></h5>
+                    <p class="fw-lighter datos-vehiculo mb-2"><span class="yearVehiculo">2016</span> - <span
+                            class="kmVehiculo">61.000 kilometros</span> -
+                        <span class="fechaPublicacion fw-lighter">Publicado hace 2 semanas</span>
+                    </p>
+                    <h3 class="nombreVehiculo text-capitalize fw-light">Volkswagen Gol Trend 1.6 Serie 101cv</h3>
+                </div>
+
+
+
+                <div class="row justify-content-between flex-lg-column">
+                    <div class="img-product col-10 col-lg-12  p-0">
+                        <div class="img-display">
+                            <div class="img-showcase position-relative">
+                                <img src="../img/img-product.png" alt="vehiculo" class="img-fluid w-100">
+                                <img src="../img/img-product.png" alt="vehiculo" class="img-fluid w-100">
+                                <img src="../img/img-product.png" alt="vehiculo" class="img-fluid w-100">
+                                <img src="../img/img-product.png" alt="vehiculo" class="img-fluid w-100">
+                                <button id="fav-no"
+                                    class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons position-absolute top-0 end-0">
+                                    <img src="../img/fav-no.png" alt="fav no" class="fav-no">
+                                </button>
+                                <button id="fav-si"
+                                    class="rounded-circle text-decoration-none btn p-0 m-2 d-none fav-icons position-absolute top-0 end-0">
+                                    <img src="../img/fav-si.png" alt="fav si" class="fav-si">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="img-product2 p-0 col-2 col-lg-12 d-flex align-items-end flex-column flex-lg-row mt-lg-2 img-select">
+                        <div class="img-item me-lg-3">
+                            <a href="#" data-id="1">
+                                <img src="../img/img-product.png" alt="shoe image"
+                                    class="img-fluid mb-2 mb-lg-0 me-lg-3">
+                            </a>
+                        </div>
+                        <div class="img-item me-lg-3">
+                            <a href="#" data-id="2">
+                                <img src="../img/img-product.png" alt="shoe image"
+                                    class="img-fluid mb-2 mb-lg-0 me-lg-3">
+                            </a>
+                        </div>
+                        <div class="img-item me-lg-3">
+                            <a href="#" data-id="3">
+                                <img src="../img/img-product.png" alt="shoe image"
+                                    class="img-fluid mb-2 mb-lg-0 me-lg-3">
+                            </a>
+                        </div>
+                        <div class="img-item me-lg-3">
+                            <a href="#" data-id="4">
+                                <img src="../img/img-product.png" alt="shoe image"
+                                    class="img-fluid mb-2 mb-lg-0 me-lg-3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-lg-5 ps-lg-4 px-0">
+                <div class="datos-articulo d-none d-lg-block">
+                    <h5>Vendedor con <span class="text-primary">identidad verificada</span></h5>
+                    <p class="fw-lighter datos-vehiculo mb-2"><span class="yearVehiculo">2016</span> - <span
+                            class="kmVehiculo">61.000 kilometros</span> -
+                        <span class="fechaPublicacion fw-lighter">Publicado hace 2 semanas</span>
+                    </p>
+                    <h3 class="nombreVehiculo text-capitalize fw-light">Volkswagen Gol Trend 1.6 Serie 101cv</h3>
+                </div>
+                <h3 class="precio-vehiculo mt-3 mt-lg-0 h1 text-center text-lg-start fw-lighter ">$<span>1.350.000</span></h3>
+                <div class="financia mt-3 rounded-xl py-3 px-4 py-lg-4 px-lg-5">
+                    <h4 class="frase text-center fw-bold text-uppercase mb-1 h5">FINANCÍA HASTA $1.284.00<br><span>EN
+                            CUOTAS
+                            FIJAS</span></h4>
+                    <p class="text-center fw-lighter mb-1">¿Cuanto necesitas?</p>
+                    <h4 class="precio-financia text-center fw-bold h2">$1.284.000</h4>
+                    <hr class="mx-auto">
+                    <div class="d-flex justify-content-between cuotas">
+                        <button class="rounded p-1">48 cuotas de<br><span>$75.069</span></button>
+                        <button class="rounded p-1">36 cuotas de<br><span>$81.674</span></button>
+                    </div>
+                    <div class="d-flex mt-2 justify-content-between cuotas">
+                        <button class="rounded p-1">24 cuotas de<br><span>$97.330</span></button>
+                        <button class="rounded p-1">12 cuotas de<br><span>$149.904</span></button>
+                    </div>
+                    <p class="text-center fw-lighter mt-4">Sujeto a evaluación crediticia</p>
+                    <button class="w-100 btn-financia rounded p-3">Personaliza tu crédito</button>
+                    <button class="w-100 mt-3 btn-financia rounded p-3">Preguntas frecuentes</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="caracterisitcas-product col-12 col-lg-8 bg-white mt-3 p-4 rounded-xl shadow-lg">
+            <h4 class="fw-light mb-4 ">Caracteristicas principales</h4>
+            <h5>Descripción</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget cursus dolor sem sederos viverra neque nec,
+                odio. Pellentesque velit tempor, morbi fermentum. Eget at ipsum amet, scelerisque eget nibh dictumst.
+                Arcu tortor est, a sit netus.</p>
+            <div class="row">
+                <div class="col-6 col-lg-3 mt-1">
+                    <h5>Marca</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="col-6 col-lg-3 mt-1">
+                    <h5>Modelo</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <h5>Combustible</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <h5>Puertas</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <h5>Carrocería</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <h5>Kilometros</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <h5>Año</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <h5>Color</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <h5>Trasmisión</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <h5>Motor</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <h5>Trasmisión</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="col-6 col-lg-3 mt-3">
+                    <h5>Motor</h5>
+                    <p>Lorem ipsum</p>
+                </div>
+            </div>
+        </div>
+        <div class="info-vendedor col-12 col-lg-4 bg-white mt-3 p-4 rounded-xl shadow-lg">
+            <h4 class="mb-3">Info sobre el vendedor</h4>
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="">
+                    <h4 class="nombre-vendedor fw-bold  mb-0">Leandro</h4>
+                    <p class="estado-vendedor mb-0 fw-lighter">Particular<span class="text-success"></span></p>
+                </div>
+                <img src="../img/img-user.png" alt="user" class="rounded-circle">
+            </div>
+            <div class="d-flex align-items-center mb-4">
+                <div> <img class="me-4" src="../img/icon-reloj.png" alt="icon">
+                </div>
+                <div>
+                    <h5 class="mb-0 fw-light">Tiempo en GO CARS</h5>
+                    <p class="mb-0 fw-lighter">10 años</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center mb-4">
+                <div> <img class="me-4" src="../img/icon-shop.png" alt="icon">
+                </div>
+                <div>
+                    <h5 class="mb-0 fw-light">Horario de atención</h5>
+                    <p class="mb-0 fw-lighter">9 a 20</p>
+                </div>
+            </div>
+            <div class="d-flex align-items-center mb-4">
+                <div> <img class="me-4" src="../img/icon-ubicacion.png" alt="icon">
+                </div>
+                <div>
+                    <h5 class="mb-0 fw-light">Ubicación del vehículo</h5>
+                    <p class="mb-0 fw-lighter">Lanús - Bs. As G.B.A Sur</p>
+                </div>
+            </div>
+            <button class="w-100 rounded-pill mt-lg-5 p-3">Enviar Mensaje</button>
+        </div>
+        <div class="resenas col-12 bg-white mt-3 mb-4 p-4 rounded-xl shadow-lg">
+            <h3 class="fw-light">Reseñas del vendedor</h3>
+            <p class="fw-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget cursus dolor sem sederos
+                viverra
+                neque nec, odio. Pellentesque velit tempor, morbi fermentum. Eget at ipsum amet, scelerisque eget nibh
+                dictumst. Arcu tortor est, a sit netus.</p>
+            <div class="resena mb-4">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex mb-1">
+                        <img src="../img/img-user.png" alt="user" class="">
+                        <div class="ms-3 w-100">
+                            <h3 class="h5 mb-0">Juan Andres</h3>
+                            <p class="fw-lighter mb-0">15 reseñas</p>
+                        </div>
+                    </div>
+                    <div class="icons-resena align-self-start d-flex">
+                        <button class="bg-transparent ms-2">
+                            <img src="../img/like.png" alt="icon" class="img-fluid">
+                        </button>
+                        <button class="bg-transparent ms-2">
+                            <img src="../img/unlike.png" alt="icon" class="img-fluid">
+                        </button>
+                        <button class="bg-transparent ms-2">
+                            <img src="../img/share.png" alt="icon" class="img-fluid">
+                        </button>
+                        <button class="bg-transparent ms-2">
+                            <img src="../img/share.png" alt="icon" class="img-fluid">
+                        </button>
+
+                    </div>
+                </div>
+                <div class="d-flex ">
+
+                    <form>
+                        <p class="clasificacion">
+                            <input id="radio1" type="radio" name="estrellas" value="5">
+                            <label for="radio1">★</label>
+                            <input id="radio2" type="radio" name="estrellas" value="4">
+                            <label for="radio2">★</label>
+                            <input id="radio3" type="radio" name="estrellas" value="3">
+                            <label for="radio3">★</label>
+                            <input id="radio4" type="radio" name="estrellas" value="2">
+                            <label for="radio4">★</label>
+                            <input id="radio5" type="radio" name="estrellas" value="1">
+                            <label for="radio5">★</label>
+                        </p>
+                    </form>
+                    <p class="mb-0 ms-3 fw-lighter">Hace 7 meses</p>
+
+                </div>
+                <p class="texto-resena fw-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                    fringilla mi a ultricies.</p>
+                <div class="d-flex flex-column flex-lg-row">
+                    <div class="input-group rounded-pill">
+                        <input type="text" class="form-control rounded-pill p-3" placeholder="Escribe una pregunta"
+                            aria-label="Escribe una pregunta" aria-describedby="basic-addon1">
+                    </div>
+                    <button class="rounded-pill mt-3 mt-lg-0 p-3 btn-preguntar ms-lg-4">
+                        Preguntar
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="row pt-5 pb-4 py-lg-5 mx-0">
+            <div class="d-none d-lg-flex col-lg-3 col-12 justify-content-center align-items-center">
+                <img src="../img/logo-byn.png" alt="logo" class="img-fluid">
+            </div>
+            <div class="col-12 col-lg-2 text-center d-flex flex-column justify-content-start">
+                <h4 class="">
+                    contacto
+                </h4>
+                <p class="mb-2 mb-lg-3">Tel: 351-5324968</p>
+                <a class="mb-lg-3 mb-2" href="mailto:hola@gocars.com.ar">hola@gocars.com.ar</a>
+                <p class="mb-2 mb-lg-3">General Paz 203</p>
+            </div>
+            <div class="col-12 col-lg-2 text-center d-flex flex-column justify-content-start">
+                <h4 class="mt-4 mt-lg-0">
+                    secciones
+                </h4>
+                <a class="d-block mb-lg-3 mb-2" href="#"> Nuestra empresa</a>
+                <a class="d-block mb-lg-3 mb-2" href="#">Categorias</a>
+                <a class="d-block mb-lg-3 mb-2" href="#">Publica tu auto</a>
+                <a class="d-block mb-lg-3 mb-2" href="#">Historial</a>
+            </div>
+            <div class="col-12 col-lg-2 text-center d-flex flex-column justify-content-start">
+                <h4 class="mt-4 mt-lg-0">
+                    redes sociales
+                </h4>
+                <a class="d-block mb-lg-3 mb-2" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a class="d-block mb-lg-3 mb-2" href="https://www.twitter.com/" target="_blank">Twitter</a>
+                <a class="d-block mb-lg-3 mb-2" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a class="d-block mb-lg-3 mb-2" href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+            </div>
+            <div class=" d-none d-lg-block col-lg-3 col-12 my-auto me-auto">
+                <iframe class=""
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12525.408239431039!2d-64.19188614071106!3d-31.416451978954928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329902eb0b2faf%3A0x4382bb478dc6e982!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses-419!2sar!4v1647730084807!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="d-lg-none col-12 d-flex justify-content-center align-items-center me-2">
+                <img src="../img/logo-byn.png" alt="producto" class="img-fluid">
+            </div>
+        </div>
+        <div class="derechos py-3">
+            <p class="m-3 text-center">Todos los derechos reservados para GOCARS 2022.</p>
+        </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js" async defer></script>
+    <script src="../js/scrpits.js" async defer></script>
+</body>
+
+</html>

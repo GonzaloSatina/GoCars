@@ -1,25 +1,19 @@
-function calcularPaginas(total) {
-  return parseInt( Math.ceil( total / 30 ));
+const imgs = document.querySelectorAll('.img-select a');
+const imgBtns = [...imgs];
+let imgId = 1;
+
+imgBtns.forEach((imgItem) => {
+    imgItem.addEventListener('click', (event) => {
+        event.preventDefault();
+        imgId = imgItem.dataset.id;
+        slideImage();
+    });
+});
+
+function slideImage(){
+    const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+    document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
 }
 
-
-// Crear el generador
-function *crearPaginacion(total) {
-  console.log(total);
-  for( let i = 1; i <= total; i++) {
-      yield i;
-  }
-}
-
-function direccionPaginacion(e) {
-  if(e.target.classList.contains('siguiente')) {
-
-      paginaActual= Number( e.target.dataset.pagina);
-      buscarImagenes();
-      formulario.scrollIntoView();
-  }
-}
-
-
-// BOTON FAV CARDS
-
+window.addEventListener('resize', slideImage);

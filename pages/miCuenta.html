@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GoCars</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar nav-shop navbar-expand-lg navbar-light px-lg-5 pt-2 pb-3 pt-lg-3 pb-lg-2 fixed-top">
+        <div class="container-fluid">
+            <div class="row mx-auto w-100">
+                <a class="navbar-brand logo-nav col-4 col-lg-1 logo mx-0 d-flex justify-content-center p-0"
+                    href="../index.html"><img class="me-auto" src="../img/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler float-end my-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-lg-11 collapse navbar-collapse mx-0" id="navbarSupportedContent">
+                    <div class="row align-items-center justify-content-end">
+                        <div class="mt-4 mt-lg-0 col-12 col-lg-6 ms-auto">
+                            <div class="input-group input-lg">
+                                <button
+                                    class="btn btn-select-nav rounded-end rounded-pill btn-outline-secondary dropdown-toggle"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">Córdoba</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item fw-lighter" href="#">CABA</a></li>
+                                    <li><a class="dropdown-item fw-lighter" href="#">Santa Fe</a></li>
+                                    <li><a class="dropdown-item fw-lighter" href="#">Entre Ríos</a></li>
+                                </ul>
+                                <input type="text" class="py-2 form-control" placeholder="Busca tu auto"
+                                    aria-label="Busca tu auto" aria-describedby="button-addon2">
+                                <button class="btn lupa-nav rounded-start rounded-pill" type="button"
+                                    id="button-addon2"><svg class="" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <button
+                            class="mb-3 mb-lg-0 mx-auto ms-lg-4 me-lg-3 fav-btn rounded-pill col-12 col-lg-1 btn d-flex align-items-end justify-content-center"
+                            type="submit"><img src="../img/fav.png" alt="fav" class="me-1 my-auto"> Favoritos</button>
+                        <button onclick="location.href='miCuenta.html'" class="mb-3 mb-lg-0 mx-lg-3 mx-auto rounded-pill col-12 col-lg-1 btn" type="submit">Mi
+                            Cuenta</button>
+                        <button class="col-12 col-lg-1 bandera-icon rounded-circle p-0"><img
+                                class="rounded-circle m-auto" src="../img/bandera.jpg" alt="nacionalidad"></button>
+                        <div
+                            class="enlaces-nav mt-2 mt-lg-0 col-12 pt-lg-3 d-flex flex-column flex-lg-row justify-content-center container-fluid">
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                Categorias
+                            </a>
+                            <a href="shopList.html" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                Ofertas
+                            </a>
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                Historial
+                            </a>
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                Publica tu auto
+                            </a>
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                ¿Quienes Somos?
+                            </a>
+                            <a href="" class="enlace-nav py-2 py-lg-1 mx-auto mx-lg-3 mx-xxl-5">
+                                Nuestra Empresa
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12  input d-lg-none mt-1 mt-lg-3 mx-0 px-0">
+                    <div class="input-group">
+                        <button
+                            class="btn btn-select-nav rounded-end rounded-pill btn-outline-secondary dropdown-toggle"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">Córdoba</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item fw-lighter" href="#">CABA</a></li>
+                            <li><a class="dropdown-item fw-lighter" href="#">Santa Fe</a></li>
+                            <li><a class="dropdown-item fw-lighter" href="#">Entre Ríos</a></li>
+                        </ul>
+                        <input type="text" class="ps-3 py-2 form-control" placeholder="Busca tu auto"
+                            aria-label="Busca tu auto" aria-describedby="button-addon2">
+                        <button class="btn lupa-nav rounded-start rounded-pill" type="button" id="button-addon2"><svg
+                                class="" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg></button>
+                    </div>
+                </div>
+
+            </div>
+    </nav>
+    <main class="miCuenta">
+        <div class="">
+            <div class="img-mi-cuenta d-flex justify-content-center">
+                <img src="../img/img-micuenta.png" alt="" class="">
+            </div>
+            <p class="mail-mi-cuenta text-center fw-lighter mb-1">carlosgonzales110@gmail.com</p>
+            <h2 class="nombre-mi-cuenta text-center">Carlos Gonzales</h2>
+            <div class="rounded-xxl px-4 px-lg-5 py-5 shadow-lg mx-auto container bg-white row my-5">
+                <div class=" col-lg-3 col-12 bg-white ps-lg-0">
+                    <ul class="tabs d-flex flex-lg-column ps-lg-0">
+                        <li class="list-unstyled fw-light py-3"><a href="#tab1"
+                                class="py-3 ps-2 text-decoration-none "><span class=""></span><span class="tab-text">Mi
+                                    perfil</span></a></li>
+                        <li class="list-unstyled fw-light py-3"><a href="#tab2"
+                                class="py-3 ps-2 text-decoration-none "><span class=""></span><span
+                                    class="tab-text">Recuperar / cambiar contraseña</span></a></li>
+                        <li class="list-unstyled fw-light py-3"><a href="#tab3"
+                                class="py-3 ps-2 text-decoration-none "><span class=""></span><span class="tab-text">Mis
+                                    publicaciones</span></a></li>
+                        <li class="list-unstyled fw-light py-3"><a href="#tab4"
+                                class="py-3 ps-2 text-decoration-none "><span class=""></span><span
+                                    class="tab-text">Publicar un vehículo</span></a></li>
+                        <li class="list-unstyled fw-light py-3"><a href="#tab5"
+                                class="py-3 ps-2 text-decoration-none "><span class=""></span><span
+                                    class="tab-text">Notificaciones</span></a></li>
+                        <li class="list-unstyled fw-light py-3"><a href="#tab6"
+                                class="py-3 ps-2 text-decoration-none "><span class=""></span><span
+                                    class="tab-text">Consultas / chats / reservas</span></a></li>
+                        <li class="list-unstyled fw-light py-3"><a href="#tab7"
+                                class="py-3 ps-2 text-decoration-none "><span class=""></span><span class="tab-text">Mis
+                                    solicitudes</span></a></li>
+                    </ul>
+                </div>
+
+
+                <div class="secciones bg-white col-lg-9 col-12 pe-lg-0">
+                    <article id="tab1">
+                        <h3 class="mb-4">Datos personales</h3>
+                        <div class="input-group my-4 d-flex justify-content-between bg-white ">
+                            <input type="text" class="py-2 px-3 rounded-pill mb-4" placeholder="Nombre"
+                                aria-label="Nombre" aria-describedby="basic-addon1">
+                            <input type="text" class="py-2 px-3 rounded-pill mb-4" placeholder="Apellido"
+                                aria-label="Apellido" aria-describedby="basic-addon2">
+                            <input type="text" class="py-2 px-3 rounded-pill mb-4" placeholder="Usuario"
+                                aria-label="Usuario" aria-describedby="basic-addon3">
+                            <input type="text" class="py-2 px-3 rounded-pill mb-4" placeholder="Correo elecrtrónico"
+                                aria-label="Correo elecrtrónico" aria-describedby="basic-addon4">
+                            <input type="text" class="py-2 px-3 rounded-pill mb-4" placeholder="Teléfono"
+                                aria-label="Teléfono" aria-describedby="basic-addon5">
+                        </div>
+                        <h3 class="mb-4">Dirección</h3>
+                        <div class="input-group my-4 d-flex justify-content-between bg-white">
+                            <input type="text" class="py-2 px-3 mb-4 rounded-pill mb-4" placeholder="Dirección 1"
+                                aria-label="Dirección 1" aria-describedby="basic-addon1">
+                            <input type="text" class="py-2 px-3 rounded-pill mb-4" placeholder="Dirección 2"
+                                aria-label="Dirección 2" aria-describedby="basic-addon2">
+                        </div>
+                        <div class="d-flex bg-white">
+                            <button class="btn-red ms-auto rounded-pill py-2 px-5">Guardar</button>
+
+                        </div>
+                    </article>
+                    <article id="tab2">
+                        <h3 class="mb-4">Contraseña actual</h3>
+                        <div class="input-group my-4 d-flex justify-content-between bg-white">
+                            <input type="text" class="py-2 px-3 mb-4 rounded-pill mb-4" placeholder="Contraseña actual"
+                                aria-label="Contraseña actual" aria-describedby="basic-addon1">
+                        </div>
+                        <h3 class="mb-4">Nueva contraseña</h3>
+                        <div class="input-group my-4 d-flex justify-content-between bg-white">
+                            <input type="text" class="py-2 px-3 mb-4 rounded-pill mb-4" placeholder="Nueva contraseña"
+                                aria-label="Nueva contraseña" aria-describedby="basic-addon1">
+                            <input type="text" class="py-2 px-3 rounded-pill mb-4" placeholder="Repetir contraseña"
+                                aria-label="Repetir contraseña" aria-describedby="basic-addon2">
+                        </div>
+                        <div class="d-flex bg-white">
+                            <button class="btn-red ms-auto rounded-pill py-2 px-5">Guardar</button>
+                    </article>
+                    <article id="tab3">
+                        <div class="mi-publicacion mb-4  rounded-xl  bg-white px-3">
+                            <div class="row bg-white rounded-xl p-3">
+                                <div class="col-3  bg-white">
+                                    <img src="../img/mi-publicacion.png" alt="publicacion" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6 col-9 my-auto bg-white">
+                                    <p class="fw-lighter datos-vehiculo mb-2"><span class="yearVehiculo">2016</span> -
+                                        <span class="kmVehiculo">61.000 kilometros</span> -
+                                        <span class="fechaPublicacion fw-lighter">Publicado hace 2 semanas</span>
+                                    </p>
+                                    <h3 class="nombreVehiculo text-capitalize fw-light">Volkswagen Gol Trend 1.6 Serie
+                                        101cv</h3>
+                                    <h3 class="precio-vehiculo fw-lighter mt-4">
+                                        $<span>1.350.000</span></h3>
+                                </div>
+                                <div
+                                    class="col-lg-3 d-flex flex-column align-items-end justify-content-around bg-white">
+                                    <button class="ms-auto btn-red rounded-pill py-2 px-5 w-100">Ver
+                                        publicación</button>
+                                    <button class="ms-auto rounded-pill btn-gris py-2 px-5 w-100">Pausar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mi-publicacion mb-4  rounded-xl  bg-white px-3">
+                            <div class="row bg-white rounded-xl p-3">
+                                <div class="col-3  bg-white">
+                                    <img src="../img/mi-publicacion.png" alt="publicacion" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6 col-9 my-auto bg-white">
+                                    <p class="fw-lighter datos-vehiculo mb-2"><span class="yearVehiculo">2016</span> -
+                                        <span class="kmVehiculo">61.000 kilometros</span> -
+                                        <span class="fechaPublicacion fw-lighter">Publicado hace 2 semanas</span>
+                                    </p>
+                                    <h3 class="nombreVehiculo text-capitalize fw-light">Volkswagen Gol Trend 1.6 Serie
+                                        101cv</h3>
+                                    <h3 class="precio-vehiculo fw-lighter mt-4">
+                                        $<span>1.350.000</span></h3>
+                                </div>
+                                <div
+                                    class="col-lg-3 d-flex flex-column align-items-end justify-content-around bg-white">
+                                    <button class="ms-auto btn-red rounded-pill py-2 px-5 w-100">Ver
+                                        publicación</button>
+                                    <button class="ms-auto rounded-pill btn-gris py-2 px-5 w-100">Pausar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mi-publicacion mb-4  rounded-xl  bg-white px-3">
+                            <div class="row bg-white rounded-xl p-3">
+                                <div class="col-3  bg-white">
+                                    <img src="../img/mi-publicacion.png" alt="publicacion" class="img-fluid">
+                                </div>
+                                <div class="col-lg-6 col-9 my-auto bg-white">
+                                    <p class="fw-lighter datos-vehiculo mb-2"><span class="yearVehiculo">2016</span> -
+                                        <span class="kmVehiculo">61.000 kilometros</span> -
+                                        <span class="fechaPublicacion fw-lighter">Publicado hace 2 semanas</span>
+                                    </p>
+                                    <h3 class="nombreVehiculo text-capitalize fw-light">Volkswagen Gol Trend 1.6 Serie
+                                        101cv</h3>
+                                    <h3 class="precio-vehiculo fw-lighter mt-4">
+                                        $<span>1.350.000</span></h3>
+                                </div>
+                                <div
+                                    class="col-lg-3 d-flex flex-column align-items-end justify-content-around bg-white">
+                                    <button class="ms-auto btn-red rounded-pill py-2 px-5 w-100">Ver
+                                        publicación</button>
+                                    <button class="ms-auto rounded-pill btn-gris py-2 px-5 w-100">Pausar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="tab4">
+
+                    </article>
+                    <article id="tab5">
+                        <div class="rounded-xl bg-white">
+                            <div class="row notificacion-gocars rounded-xl px-3 py-4 bg-white mb-4 me-0">
+                                <div class="col-2 bg-white d-flex"><img class="p-1 img-fluid mx-auto"
+                                        src="../img/notification-icon.png" alt="Notificacion"></div>
+                                <div class="col-10 ps-3 bg-white d-flex flex-column justify-content-between">
+                                    <h5 class="mb-3 fw-light">Tienes un 25% de descuento en articulos para el hogar</h5>
+                                    <p class="mb-0 fw-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Sem a, id faucibus sodales enim aliquet non massa. Porttitor ullamcorper ornare
+                                        diam fermentum.</p>
+                                </div>
+                            </div>
+                            <div class="row notificacion-publicacion rounded-xl px-3 py-4 bg-white mb-4 me-0">
+                                <div class="col-2 bg-white d-flex"><img class="img-fluid mx-auto"
+                                        src="../img/mi-publicacion.png" alt="Notificacion"></div>
+                                <div class="col-10 ps-3 bg-white d-flex flex-column justify-content-between">
+                                    <h5 class="mb-3 fw-light">Tienes un 25% de descuento en articulos para el hogar</h5>
+                                    <p class="mb-0 fw-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Sem a, id faucibus sodales enim aliquet non massa. Porttitor ullamcorper ornare
+                                        diam fermentum.</p>
+                                </div>
+                            </div>
+                            <div class="row notificacion-gocars rounded-xl px-3 py-4 bg-white mb-4 me-0">
+                                <div class="col-2 bg-white d-flex"><img class="p-1 img-fluid mx-auto"
+                                        src="../img/notification-icon.png" alt="Notificacion"></div>
+                                <div class="col-10 ps-3 bg-white d-flex flex-column justify-content-between">
+                                    <h5 class="mb-3 fw-light">Tienes un 25% de descuento en articulos para el hogar</h5>
+                                    <p class="mb-0 fw-lighter">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Sem a, id faucibus sodales enim aliquet non massa. Porttitor ullamcorper ornare
+                                        diam fermentum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="tab6">
+                        <h3 class="mb-5">Consultas/chats/reservas</h3>
+                        <div class="div-mensaje mb-3 p-3 bg-white">
+                            <div class="bg-white d-flex w-100 justify-content-between">
+                                <div class="bg-white d-flex">
+                                    <img class="img-user-mensajes" src="../img/user-mensajes.png" alt="user">
+                                    <div class="bg-white ms-3">
+                                        <h4 class="mb-0">Patricia JD</h4>
+                                        <p class="fw-lighter mb-0 fecha-mensaje">Hace 7 meses</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white d-flex align-items-start">
+                                    <button class="ms-3 red fw-lighter">Responder</button>
+                                    <button class="ms-3 gris fw-lighter">Eliminar</button>
+                                    <button class="ms-3"><img src="" alt="..."></button>
+                                </div>
+                            </div>
+                            <p class="bg-white mensaje fw-lighter my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla mi a ultricies.
+                            </p>
+                        </div>
+                        <div class="div-mensaje mb-3 p-3 bg-white">
+                            <div class="bg-white d-flex w-100 justify-content-between">
+                                <div class="bg-white d-flex">
+                                    <img class="img-user-mensajes" src="../img/user-mensajes.png" alt="user">
+                                    <div class="bg-white ms-3">
+                                        <h4 class="mb-0">Patricia JD</h4>
+                                        <p class="fw-lighter mb-0 fecha-mensaje">Hace 7 meses</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white d-flex align-items-start">
+                                    <button class="ms-3 red fw-lighter">Responder</button>
+                                    <button class="ms-3 gris fw-lighter">Eliminar</button>
+                                    <button class="ms-3"><img src="" alt="..."></button>
+                                </div>
+                            </div>
+                            <p class="bg-white mensaje fw-lighter my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla mi a ultricies.
+                            </p>
+                        </div>
+                        <div class="div-mensaje mb-3 p-3 bg-white">
+                            <div class="bg-white d-flex w-100 justify-content-between">
+                                <div class="bg-white d-flex">
+                                    <img class="img-user-mensajes" src="../img/user-mensajes.png" alt="user">
+                                    <div class="bg-white ms-3">
+                                        <h4 class="mb-0">Patricia JD</h4>
+                                        <p class="fw-lighter mb-0 fecha-mensaje">Hace 7 meses</p>
+                                    </div>
+                                </div>
+                                <div class="bg-white d-flex align-items-start">
+                                    <button class="ms-3 red fw-lighter">Responder</button>
+                                    <button class="ms-3 gris fw-lighter">Eliminar</button>
+                                    <button class="ms-3"><img src="" alt="..."></button>
+                                </div>
+                            </div>
+                            <p class="bg-white mensaje fw-lighter my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla mi a ultricies.
+                            </p>
+                        </div>
+                    </article>
+                    <article id="tab7">
+                     
+                    </article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="row pt-5 pb-4 py-lg-5 mx-0">
+            <div class="d-none d-lg-flex col-lg-3 col-12 justify-content-center align-items-center">
+                <img src="../img/logo-byn.png" alt="logo" class="img-fluid">
+            </div>
+            <div class="col-12 col-lg-2 text-center d-flex flex-column justify-content-start">
+                <h4 class="">
+                    contacto
+                </h4>
+                <p class="mb-2 mb-lg-3">Tel: 351-5324968</p>
+                <a class="mb-lg-3 mb-2" href="mailto:hola@gocars.com.ar">hola@gocars.com.ar</a>
+                <p class="mb-2 mb-lg-3">General Paz 203</p>
+            </div>
+            <div class="col-12 col-lg-2 text-center d-flex flex-column justify-content-start">
+                <h4 class="mt-4 mt-lg-0">
+                    secciones
+                </h4>
+                <a class="d-block mb-lg-3 mb-2" href="#"> Nuestra empresa</a>
+                <a class="d-block mb-lg-3 mb-2" href="#">Categorias</a>
+                <a class="d-block mb-lg-3 mb-2" href="#">Publica tu auto</a>
+                <a class="d-block mb-lg-3 mb-2" href="#">Historial</a>
+            </div>
+            <div class="col-12 col-lg-2 text-center d-flex flex-column justify-content-start">
+                <h4 class="mt-4 mt-lg-0">
+                    redes sociales
+                </h4>
+                <a class="d-block mb-lg-3 mb-2" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                <a class="d-block mb-lg-3 mb-2" href="https://www.twitter.com/" target="_blank">Twitter</a>
+                <a class="d-block mb-lg-3 mb-2" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                <a class="d-block mb-lg-3 mb-2" href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+            </div>
+            <div class=" d-none d-lg-block col-lg-3 col-12 my-auto me-auto">
+                <iframe class=""
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12525.408239431039!2d-64.19188614071106!3d-31.416451978954928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329902eb0b2faf%3A0x4382bb478dc6e982!2sPlaza%20San%20Mart%C3%ADn!5e0!3m2!1ses-419!2sar!4v1647730084807!5m2!1ses-419!2sar"
+                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="d-lg-none col-12 d-flex justify-content-center align-items-center me-2">
+                <img src="../img/logo-byn.png" alt="producto" class="img-fluid">
+            </div>
+        </div>
+        <div class="derechos py-3">
+            <p class="m-3 text-center">Todos los derechos reservados para GOCARS 2022.</p>
+        </div>
+    </footer>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.bundle.min.js" async defer></script>
+    <script src="../js/scrpits.js" async defer></script>
+    <script src="../js/navigation.js" async defer></script>
+</body>
+
+</html>

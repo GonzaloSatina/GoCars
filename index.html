@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
 </head>
-<body>
+
+<body class="index">
     <nav class="navbar nav-shop navbar-expand-lg navbar-light px-lg-5 pt-2 pb-3 pt-lg-3 pb-lg-2 fixed-top">
         <div class="container-fluid">
             <div class="row mx-auto w-100">
                 <a class="navbar-brand logo-nav col-4 col-lg-1 logo mx-0 d-flex justify-content-center p-0"
-                    href="#"><img class="me-auto" src="img/logo.png" alt="Logo"></a>
+                    href="index.html"><img class="me-auto" src="img/logo.png" alt="Logo"></a>
                 <button class="navbar-toggler float-end my-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -24,10 +25,19 @@
                     <div class="row align-items-center justify-content-end">
                         <div class="mt-4 mt-lg-0 col-12 col-lg-6 ms-auto">
                             <div class="input-group input-lg">
-                                <input type="text" class="ps-4 py-2 form-control" placeholder="Busca tu auto"
+                                <button
+                                    class="btn btn-select-nav rounded-end rounded-pill btn-outline-secondary dropdown-toggle"
+                                    type="button" data-bs-toggle="dropdown" aria-expanded="false">Córdoba</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item fw-lighter" href="#">CABA</a></li>
+                                    <li><a class="dropdown-item fw-lighter" href="#">Santa Fe</a></li>
+                                    <li><a class="dropdown-item fw-lighter" href="#">Entre Ríos</a></li>
+                                </ul>
+                                <input type="text" class="py-2 form-control" placeholder="Busca tu auto"
                                     aria-label="Busca tu auto" aria-describedby="button-addon2">
-                                <button class="btn lupa-nav" type="button" id="button-addon2"><svg class="" fill="none"
-                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <button class="btn lupa-nav rounded-start rounded-pill" type="button"
+                                    id="button-addon2"><svg class="" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                                     </svg></button>
@@ -36,7 +46,7 @@
                         <button
                             class="mb-3 mb-lg-0 mx-auto ms-lg-4 me-lg-3 fav-btn rounded-pill col-12 col-lg-1 btn d-flex align-items-end justify-content-center"
                             type="submit"><img src="img/fav.png" alt="fav" class="me-1 my-auto"> Favoritos</button>
-                        <button class="mb-3 mb-lg-0 mx-lg-3 mx-auto rounded-pill col-12 col-lg-1 btn" type="submit">Mi
+                        <button onclick="location.href='pages/miCuenta.html'" class="mb-3 mb-lg-0 mx-lg-3 mx-auto rounded-pill col-12 col-lg-1 btn" type="submit">Mi
                             Cuenta</button>
                         <button class="col-12 col-lg-1 bandera-icon rounded-circle p-0"><img
                                 class="rounded-circle m-auto" src="img/bandera.jpg" alt="nacionalidad"></button>
@@ -63,12 +73,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12  input d-lg-none mt-3 mx-0 px-0">
+                <div class="col-12  input d-lg-none mt-1 mt-lg-3 mx-0 px-0">
                     <div class="input-group">
-                        <input type="text" class="ps-4 py-2 form-control" placeholder="Busca tu auto"
+                        <button
+                            class="btn btn-select-nav rounded-end rounded-pill btn-outline-secondary dropdown-toggle"
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">Córdoba</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item fw-lighter" href="#">CABA</a></li>
+                            <li><a class="dropdown-item fw-lighter" href="#">Santa Fe</a></li>
+                            <li><a class="dropdown-item fw-lighter" href="#">Entre Ríos</a></li>
+                        </ul>
+                        <input type="text" class="ps-3 py-2 form-control" placeholder="Busca tu auto"
                             aria-label="Busca tu auto" aria-describedby="button-addon2">
-                        <button class="btn lupa-nav" type="button" id="button-addon2"><svg class="" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <button class="btn lupa-nav rounded-start rounded-pill" type="button" id="button-addon2"><svg
+                                class="" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                             </svg></button>
@@ -129,26 +148,22 @@
         <h3 class="text-center mt-5 mb-3 mb-lg-4">vehiculos destacados</h3>
 
         <div class="row mx-auto justify-content-around justify-content-lg-between aling-items-center pt-2">
-            <a href="#"
-                class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
+            <a href="#" class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
                 <img src="img/00 1.png" alt="" class="mx-auto px-4 py-2 img-fluid">
                 <hr class="my-1">
                 <h5 class="nombre-card text-center py-2">chevrolet</h5>
             </a>
-            <a href="#"
-                class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
+            <a href="#" class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
                 <img src="img/00 2.png" alt="" class="mx-auto px-4 py-2 img-fluid">
                 <hr class="my-1">
                 <h5 class="nombre-card text-center py-2">fiat</h5>
             </a>
-            <a href="#"
-                class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
+            <a href="#" class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
                 <img src="img/00 3.png" alt="" class="mx-auto px-4 py-2 img-fluid">
                 <hr class="my-1">
                 <h5 class="nombre-card text-center py-2">volkswagen</h5>
             </a>
-            <a href="#"
-                class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
+            <a href="#" class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
                 <img src="img/00 4.png" alt="" class="mx-auto px-4 py-2 img-fluid">
                 <hr class="my-1">
                 <h5 class="nombre-card text-center py-2">renault</h5>
@@ -157,7 +172,7 @@
     </div>
     <h3 class="text-center mt-5 mb-3 mb-lg-4 mx-2">publicaciones recientes</h3>
     <div class="publicaciones-home pt-2 mb-5 container px-0">
-        <a class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
+        <a href="pages/productPage.html" class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
             <button id="fav-no"
                 class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
                 <img src="img/fav-no.png" alt="fav no" class="fav-no">
@@ -178,7 +193,7 @@
                 Córdoba, Argentina.
             </p>
         </a>
-        <a class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
+        <a href="pages/productPage.html" class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
             <button id="fav-no"
                 class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
                 <img src="img/fav-no.png" alt="fav no" class="fav-no">
@@ -199,7 +214,7 @@
                 Villa de Maria, Argentina.
             </p>
         </a>
-        <a class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
+        <a href="pages/productPage.html" class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
             <button id="fav-no"
                 class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
                 <img src="img/fav-no.png" alt="fav no" class="fav-no">
@@ -221,7 +236,7 @@
                 Rio Cuarto, Argentina.
             </p>
         </a>
-        <a class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
+        <a href="pages/productPage.html" class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
             <button id="fav-no"
                 class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
                 <img src="img/fav-no.png" alt="fav no" class="fav-no">
@@ -243,7 +258,7 @@
                 Córdoba, Argentina.
             </p>
         </a>
-        <a class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
+        <a href="pages/productPage.html" class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
             <button id="fav-no"
                 class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
                 <img src="img/fav-no.png" alt="fav no" class="fav-no">
@@ -264,7 +279,7 @@
                 Córdoba, Argentina.
             </p>
         </a>
-        <a class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
+        <a href="pages/productPage.html" class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
             <button id="fav-no"
                 class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
                 <img src="img/fav-no.png" alt="fav no" class="fav-no">
@@ -285,7 +300,7 @@
                 Villa de Maria, Argentina.
             </p>
         </a>
-        <a class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
+        <a href="pages/productPage.html" class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
             <button id="fav-no"
                 class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
                 <img src="img/fav-no.png" alt="fav no" class="fav-no">
@@ -307,7 +322,7 @@
                 Rio Cuarto, Argentina.
             </p>
         </a>
-        <a class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
+        <a href="pages/productPage.html" class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
             <button id="fav-no"
                 class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
                 <img src="img/fav-no.png" alt="fav no" class="fav-no">
@@ -329,7 +344,7 @@
                 Córdoba, Argentina.
             </p>
         </a>
-        <a class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
+        <a href="pages/productPage.html" class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
             <button id="fav-no"
                 class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
                 <img src="img/fav-no.png" alt="fav no" class="fav-no">
@@ -350,7 +365,7 @@
                 Córdoba, Argentina.
             </p>
         </a>
-        <a class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
+        <a href="pages/productPage.html" class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
             <button id="fav-no"
                 class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
                 <img src="img/fav-no.png" alt="fav no" class="fav-no">
@@ -371,7 +386,7 @@
                 Villa de Maria, Argentina.
             </p>
         </a>
-        <a class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
+        <a href="pages/productPage.html" class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
             <button id="fav-no"
                 class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
                 <img src="img/fav-no.png" alt="fav no" class="fav-no">
@@ -393,7 +408,7 @@
                 Rio Cuarto, Argentina.
             </p>
         </a>
-        <a class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
+        <a href="pages/productPage.html" class="mb-4 mx-2 px-0 shadow-card card-publicaciones d-flex flex-column">
             <button id="fav-no"
                 class="rounded-circle text-decoration-none btn p-0 m-2 fav-icons w-auto position-absolute top-0 end-0">
                 <img src="img/fav-no.png" alt="fav no" class="fav-no">
@@ -442,31 +457,38 @@
     <h3 class="text-center mb-2 mb-lg-3 mt-5">marcas de vehiculos</h3>
     <div class="marcas">
         <div class="d-flex justify-content-md-center py-3">
-            <div class="rounded-circle shadow-card mx-xl-3 mx-2 mb-3 bg-white d-flex justify-content-center align-items-center">
+            <div
+                class="rounded-circle shadow-card mx-xl-3 mx-2 mb-3 bg-white d-flex justify-content-center align-items-center">
                 <img src="img/01.png" alt="" class="logo-marca p-3 p-md-4">
 
             </div>
-            <div class="rounded-circle shadow-card mx-xl-3 mx-2 mb-3 bg-white d-flex justify-content-center align-items-center">
+            <div
+                class="rounded-circle shadow-card mx-xl-3 mx-2 mb-3 bg-white d-flex justify-content-center align-items-center">
                 <img src="img/02.png" alt="" class="logo-marca p-3 p-md-4">
 
             </div>
-            <div class="rounded-circle shadow-card mx-xl-3 mx-2 mb-3 bg-white d-flex justify-content-center align-items-center">
+            <div
+                class="rounded-circle shadow-card mx-xl-3 mx-2 mb-3 bg-white d-flex justify-content-center align-items-center">
                 <img src="img/03.png" alt="" class="logo-marca p-3 p-md-4">
 
             </div>
-            <div class="rounded-circle shadow-card mx-xl-3 mx-2 mb-3 bg-white d-flex justify-content-center align-items-center">
+            <div
+                class="rounded-circle shadow-card mx-xl-3 mx-2 mb-3 bg-white d-flex justify-content-center align-items-center">
                 <img src="img/04.png" alt="" class="logo-marca p-3 p-md-4">
 
             </div>
-            <div class="rounded-circle shadow-card mx-xl-3 mx-2 mb-3 bg-white d-flex justify-content-center align-items-center">
+            <div
+                class="rounded-circle shadow-card mx-xl-3 mx-2 mb-3 bg-white d-flex justify-content-center align-items-center">
                 <img src="img/05.png" alt="" class="logo-marca p-3 p-md-4">
 
             </div>
-            <div class="rounded-circle shadow-card mx-xl-3 mx-2 mb-3 bg-white d-flex justify-content-center align-items-center">
+            <div
+                class="rounded-circle shadow-card mx-xl-3 mx-2 mb-3 bg-white d-flex justify-content-center align-items-center">
                 <img src="img/06.png" alt="" class="logo-marca p-3 p-md-4">
 
             </div>
-            <div class="rounded-circle shadow-card mx-xl-3 mx-2 mb-3 bg-white d-flex justify-content-center align-items-center">
+            <div
+                class="rounded-circle shadow-card mx-xl-3 mx-2 mb-3 bg-white d-flex justify-content-center align-items-center">
                 <img src="img/07.png" alt="" class="logo-marca p-3 p-md-4">
 
             </div>
@@ -476,26 +498,22 @@
         <h3 class="text-center mt-5 mb-3 mb-lg-4">tipos de vehículos</h3>
 
         <div class="row mx-auto justify-content-around justify-content-lg-between aling-items-center pt-2">
-            <a href="#"
-                class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
+            <a href="#" class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
                 <img src="img/0 1.png" alt="" class="mx-auto px-4 py-2 img-fluid">
                 <hr class="my-1">
                 <h5 class="nombre-card text-center py-2">auto</h5>
             </a>
-            <a href="#"
-                class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
+            <a href="#" class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
                 <img src="img/0 2.png" alt="" class="mx-auto px-4 py-2 img-fluid">
                 <hr class="my-1">
                 <h5 class="nombre-card text-center py-2">camioneta</h5>
             </a>
-            <a href="#"
-                class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
+            <a href="#" class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
                 <img src="img/0 3.png" alt="" class="mx-auto px-4 py-2 img-fluid">
                 <hr class="my-1">
                 <h5 class="nombre-card text-center py-2">camión</h5>
             </a>
-            <a href="#"
-                class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
+            <a href="#" class="mb-2 mb-lg-4 px-0 shadow-card card-auto d-flex flex-column justify-content-end">
                 <img src="img/0 4.png" alt="" class="mx-auto px-4 py-2 img-fluid">
                 <hr class="my-1">
                 <h5 class="nombre-card text-center py-2">utilitario</h5>
@@ -525,6 +543,24 @@
             </div>
         </div>
     </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <footer>
         <div class="row pt-5 pb-4 py-lg-5 mx-0">
             <div class="d-none d-lg-flex col-lg-3 col-12 justify-content-center align-items-center">
